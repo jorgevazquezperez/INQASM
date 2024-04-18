@@ -11,7 +11,7 @@ M_REG : 'M' NUMBER ;
 ADDRESS : '@' NUMBER ;
 ARRAY_ENTRY : ADDRESS '[' NUMBER ']' ;
 ARRAY_SLICE : ADDRESS '[' NUMBER ':' NUMBER ']' ;
-VAR : [A-Z] [A-Z0-9_]* ;
+VAR : [A-Z][A-Z0-9_]* ;
 
 // They consider a Template variable in the GitHub as as added operand
 
@@ -91,6 +91,7 @@ PREAMBLE_DEFINE : 'DEFINE' ;
 // MISCELLANEOUS
 //---------------//
 COMMENT : '//' ~ [\r\n]* -> channel(HIDDEN) ;
+LINE_NUMBER : IMMEDIATE ;
 
 //---------//
 // SYMBOLS
