@@ -1,6 +1,13 @@
 lexer grammar NetQASMLexer;
 
 //----------//
+// PREAMBLE
+//----------//
+PREAMBLE_NETQASM : 'NETQASM' ;
+PREAMBLE_APPID : 'APPID' ;
+PREAMBLE_DEFINE : 'DEFINE' ;
+
+//----------//
 // OPERANDS
 //----------//
 IMMEDIATE : NUMBER ;
@@ -80,13 +87,6 @@ QFREE : 'qfree' ;
 RET_REG : 'ret_reg' ;
 RET_ARR : 'ret_arr' ;
 
-//----------//
-// PREAMBLE
-//----------//
-PREAMBLE_NETQASM : 'NETQASM' ;
-PREAMBLE_APPID : 'APPID' ;
-PREAMBLE_DEFINE : 'DEFINE' ;
-
 //---------------//
 // MISCELLANEOUS
 //---------------//
@@ -99,5 +99,8 @@ LINE_NUMBER : IMMEDIATE ;
 ID : [a-zA-Z_][a-zA-Z0-9_]* ;
 VERSION_NUMBER : NUMBER '.' NUMBER ;
 NUMBER : [0-9]+ ;
+HASH: '#' ;
+LCURLY : '{' ;
+RCURLY : '}' ;
 EOL : [\r\n]+ ;
 WS : [ \t] -> skip ;

@@ -3,18 +3,17 @@ parser grammar NetQASMParser;
 options { tokenVocab= NetQASMLexer; }
 
 program
-    : preamble EOF?
-    | line* EOF
+    : preamble EOL* line* EOF
     ;
 
 // You have to write the version number and the app ID before anything
 preamble
-    : version appid define* 
+    : version EOL appid EOL (define EOL)* 
     ;
 
 line
-    : instruction
-    | COMMENT
+    : instruction EOL
+    | COMMENT EOL
     ;
 
 instruction
@@ -125,6 +124,6 @@ classicalReg
     ;
 
 // Preamble directives
-version : '#' PREAMBLE_NETQASM VERSION_NUMBER ;
-appid : '#' PREAMBLE_APPID NUMBER ;
-define : '#' PREAMBLE_DEFINE ID '{' instruction '}' ;
+version : HASH PREAMBLE_NETQASM VERSION_NUMBER ;
+appid : HASH PREAMBLE_APPID IMMEDIATE ;
+define : HASH PREAMBLE_DEFINE ID LCURLY instruction RCURLY ;
