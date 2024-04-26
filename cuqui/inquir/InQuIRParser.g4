@@ -27,20 +27,19 @@ instruction
     ;
 
 function
-    : session EQUAL OPEN LBRACK participant (COMMA participant)* RBRACK     // OPEN
-    | CLOSE (session)                                                       // CLOSE
-    | value EQUAL INIT LPAREN RPAREN                                        // INIT
-    | FREE value                                                            // FREE
-    | value EQUAL MEASURE qubit                                             // MEASURE
-    | value EQUAL GENENT LBRACK participant RBRACK LPAREN label RPAREN      // GENENT
-    | LPAREN value COMMA value RPAREN EQUAL ENTSWAP                         // ENTSWAP
+    : session EQUAL OPEN LBRACK participant (COMMA participant)* RBRACK                 // OPEN
+    | CLOSE (session)                                                                   // CLOSE
+    | value EQUAL INIT LPAREN RPAREN                                                    // INIT
+    | FREE value                                                                        // FREE
+    | value EQUAL MEASURE qubit                                                         // MEASURE
+    | value EQUAL GENENT LBRACK participant RBRACK LPAREN label RPAREN                  // GENENT
+    | LPAREN value COMMA value RPAREN EQUAL ENTSWAP                                     // ENTSWAP
         LPAREN expression COMMA expression RPAREN
-    | RECV LPAREN session COMMA label COLON value RPAREN  // QRECV 
-    | SEND LBRACK participant RBRACK LPAREN session COMMA label COLON value RPAREN    // QSEND
-        COMMA expression COMMA expression RPAREN
-    | RCXC LBRACK participant RBRACK LPAREN session COMMA label COMMA       // RCXC
+    | RECV LPAREN session COMMA label COLON value RPAREN                                // RECV 
+    | SEND LBRACK participant RBRACK LPAREN session COMMA label COLON value RPAREN      // SEND
+    | RCXC LBRACK participant RBRACK LPAREN session COMMA label COMMA                   // RCXC
         expression COMMA expression RPAREN
-    | RCXT LBRACK participant RBRACK LPAREN session COMMA label COMMA       // RCXT
+    | RCXT LBRACK participant RBRACK LPAREN session COMMA label COMMA                   // RCXT
         expression COMMA expression RPAREN
     ;
 
