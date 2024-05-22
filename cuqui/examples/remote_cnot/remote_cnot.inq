@@ -1,0 +1,53 @@
+0 {
+  world = open[0,1,2,3,4,5,6,7];
+  q0 = init();
+  q1 = init();
+  _cq0 = genEnt[1](l0);
+  CX q0 _cq0;
+  _m0 = measure _cq0;
+  free _cq0;
+  send[1](world, l1:_m0);
+  recv(world, l1_2:_m1);
+  Z[_m1] q0;
+  c0 = measure q0;
+  c1 = measure q1;
+
+}
+1 {
+  world = open[0,1,2,3,4,5,6,7];
+  q2 = init();
+  _cq1 = genEnt[0](l0);
+  CX _cq1 q2;
+  H _cq1;
+  _m2 = measure _cq1;
+  free _cq1;
+  send[0](world, l1_2:_m2);
+  recv(world, l1:_m3);
+  X[_m3] q2;
+  c2 = measure q2;
+
+}
+2 {
+  world = open[0,1,2,3,4,5,6,7];
+
+}
+3 {
+  world = open[0,1,2,3,4,5,6,7];
+
+}
+4 {
+  world = open[0,1,2,3,4,5,6,7];
+
+}
+5 {
+  world = open[0,1,2,3,4,5,6,7];
+
+}
+6 {
+  world = open[0,1,2,3,4,5,6,7];
+
+}
+7 {
+  world = open[0,1,2,3,4,5,6,7];
+
+}

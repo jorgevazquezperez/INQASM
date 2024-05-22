@@ -1,0 +1,27 @@
+# NETQASM 1.0
+# APPID 0
+
+set Q0 0
+qalloc Q0
+init Q0
+
+set Q1 1
+qalloc Q1
+init Q1
+
+create_epr 1 0 $qubits $args $entinfo
+wait_all $entinfo[0:10]
+
+array 1 $qubits
+store 0 $qubits[0]
+
+array 20 $args
+
+array 10 $entinfo
+
+
+
+load 0 $qubits[0]
+meas Q0 M0
+
+ret_req M0

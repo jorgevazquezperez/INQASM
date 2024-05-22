@@ -17,7 +17,7 @@ First you need to install ANTLR4. For doing this, follow the [The Definite ANTLR
 - Java SDK: openjdk-19.0.2
 
 ## InQuIR grammar
-The InQuIR grammar implemented does not follow exactly the grammar defined in the paper 
+The InQuIR grammar implemented does not follow exactly the grammar defined in the paper. The grammar employed is the one inferred from the [InQuIR repository](https://github.com/team-InQuIR/InQuIR). This grammar serves a starting point, as it has been already implemented, but it does not mean that it cannot be updated, modified or even completely changed. The importance of this grammar is to perform the concept of an IR in the distributed world.
 
 
 ## Examples/Tests
