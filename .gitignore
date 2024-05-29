@@ -1,0 +1,5 @@
+# NetQASM files 
+log/
+
+# Python files
+pycache/
