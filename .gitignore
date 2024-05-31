@@ -6,3 +6,6 @@ pycache/
 
 # For CMake builds
 /build*
+
+#ANTLR files
+.antlr/
