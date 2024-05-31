@@ -16,5 +16,6 @@ esac
 
 if [ ! -z "$option" ]; then
     grun="java org.antlr.v4.gui.TestRig"
+    cd /home/jorge.vazquez.perez/Nextcloud/Proyectos/InQuIR_Compiler/cuqui/inquir
     $grun InQuIR mainprogram -$option ../tree.ps ../$filepath
 fi
