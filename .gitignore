@@ -8,4 +8,7 @@ __pycache__/
 /build*
 
 #ANTLR files
-.antlr/
+.antlr
+
+# VS Code files
+.vscode

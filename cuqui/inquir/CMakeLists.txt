@@ -1,7 +1,7 @@
 set(LIBRARY_NAME inquir-compiler)
 
 file(GLOB SRC
-          InQuIRCompiler.cpp
+          *.cpp
           generated/*.cpp)
 
 #usfunctiongetresourcesource(TARGET ${LIBRARY_NAME} OUT SRC)
@@ -10,7 +10,7 @@ file(GLOB SRC
 add_library(${LIBRARY_NAME} SHARED ${SRC})
 
 target_include_directories(${LIBRARY_NAME}
-                            PUBLIC generated)
+                            PUBLIC generated ${CMAKE_CURRENT_SOURCE_DIR})
                                   
 target_link_libraries(${LIBRARY_NAME}
                       PUBLIC antlr4)
@@ -49,3 +49,9 @@ endif()
 ]=]
 
 install(TARGETS ${LIBRARY_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/libs)
+
+install(DIRECTORY "." 
+        DESTINATION "include/inquir"
+        COMPONENT dev 
+        FILES_MATCHING PATTERN "*.h"
+        )
