@@ -2,7 +2,7 @@
 log/
 
 # Python files
-pycache/
+__pycache__/
 
 # For CMake builds
 /build*

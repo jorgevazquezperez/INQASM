@@ -1,28 +1,21 @@
 set(LIBRARY_NAME inquir-compiler)
 
-set(ANTLR_LIB ${CMAKE_SOURCE_DIR}/dist/libantlr4-runtime.so)
-if (APPLE)
-set(ANTLR_LIB ${CMAKE_SOURCE_DIR}/dist/libantlr4-runtime.dylib)
-endif()
 file(GLOB SRC
           InQuIRCompiler.cpp
           generated/*.cpp)
 
-
-usfunctiongetresourcesource(TARGET ${LIBRARY_NAME} OUT SRC)
-usfunctiongeneratebundleinit(TARGET ${LIBRARY_NAME} OUT SRC)
+#usfunctiongetresourcesource(TARGET ${LIBRARY_NAME} OUT SRC)
+#usfunctiongeneratebundleinit(TARGET ${LIBRARY_NAME} OUT SRC)
 
 add_library(${LIBRARY_NAME} SHARED ${SRC})
 
-  target_include_directories(${LIBRARY_NAME}
-                             PUBLIC generated
-                                    ${CMAKE_SOURCE_DIR}/antlr)
-                                    
-  target_link_libraries(${LIBRARY_NAME}
-                        PUBLIC ${ANTLR_LIB}
-                               CppMicroServices PRIVATE cpr)
+target_include_directories(${LIBRARY_NAME}
+                            PUBLIC generated)
+                                  
+target_link_libraries(${LIBRARY_NAME}
+                      PUBLIC antlr4)
 
-
+#[=[
 set(_bundle_name inquir_compiler)
 set_target_properties(${LIBRARY_NAME}
                       PROPERTIES COMPILE_DEFINITIONS
@@ -36,6 +29,7 @@ usfunctionembedresources(TARGET
                          ${CMAKE_CURRENT_SOURCE_DIR}
                          FILES
                          manifest.json)
+
 
 if(APPLE)
   set_target_properties(${LIBRARY_NAME}
@@ -52,5 +46,6 @@ if(XACC_BUILD_TESTS)
   add_subdirectory(tests)
   add_subdirectory(accelerator/json/tests)
 endif()
+]=]
 
-install(TARGETS ${LIBRARY_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/plugins)
+install(TARGETS ${LIBRARY_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/libs)
