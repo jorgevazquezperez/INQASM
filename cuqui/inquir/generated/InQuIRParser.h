@@ -22,7 +22,7 @@ public:
   };
 
   enum {
-    RuleMainprogram = 0, RuleSystem = 1, RuleProcess = 2, RuleInstruction = 3, 
+    RuleMainprogram = 0, RuleSystem = 1, RuleProcess = 2, RuleLine = 3, 
     RuleFunction = 4, RuleQuantum_instruction = 5, RuleExpression = 6, RuleValue = 7, 
     RuleGate = 8, RuleSession = 9, RuleParticipant = 10, RuleLabel = 11, 
     RuleQubit = 12
@@ -48,7 +48,7 @@ public:
   class MainprogramContext;
   class SystemContext;
   class ProcessContext;
-  class InstructionContext;
+  class LineContext;
   class FunctionContext;
   class Quantum_instructionContext;
   class ExpressionContext;
@@ -99,8 +99,8 @@ public:
     ParticipantContext *participant();
     antlr4::tree::TerminalNode *LCURLY();
     antlr4::tree::TerminalNode *RCURLY();
-    std::vector<InstructionContext *> instruction();
-    InstructionContext* instruction(size_t i);
+    std::vector<LineContext *> line();
+    LineContext* line(size_t i);
 
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
     virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
@@ -109,42 +109,196 @@ public:
 
   ProcessContext* process();
 
-  class  InstructionContext : public antlr4::ParserRuleContext {
+  class  LineContext : public antlr4::ParserRuleContext {
   public:
-    InstructionContext(antlr4::ParserRuleContext *parent, size_t invokingState);
-    virtual size_t getRuleIndex() const override;
-    FunctionContext *function();
-    antlr4::tree::TerminalNode *SEMICOLON();
-    ValueContext *value();
-    antlr4::tree::TerminalNode *EQUAL();
-    ExpressionContext *expression();
-    Quantum_instructionContext *quantum_instruction();
-    antlr4::tree::TerminalNode *IF();
-    antlr4::tree::TerminalNode *THEN();
-    std::vector<ProcessContext *> process();
-    ProcessContext* process(size_t i);
-    antlr4::tree::TerminalNode *ELSE();
-    SessionContext *session();
-    antlr4::tree::TerminalNode *LBRACK();
-    antlr4::tree::TerminalNode *RBRACK();
-    antlr4::tree::TerminalNode *EXCLAM();
-    antlr4::tree::TerminalNode *LPAREN();
-    LabelContext *label();
-    antlr4::tree::TerminalNode *COLON();
-    antlr4::tree::TerminalNode *RPAREN();
-    antlr4::tree::TerminalNode *QUESTION();
+    LineContext(antlr4::ParserRuleContext *parent, size_t invokingState);
+   
+    LineContext() = default;
+    void copyFrom(LineContext *context);
+    using antlr4::ParserRuleContext::copyFrom;
 
-    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
-    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual size_t getRuleIndex() const override;
+
    
   };
 
-  InstructionContext* instruction();
+  class  QuantumInstructionLineContext : public LineContext {
+  public:
+    QuantumInstructionLineContext(LineContext *ctx);
+
+    Quantum_instructionContext *quantum_instruction();
+    antlr4::tree::TerminalNode *SEMICOLON();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+  };
+
+  class  FunctionLineContext : public LineContext {
+  public:
+    FunctionLineContext(LineContext *ctx);
+
+    FunctionContext *function();
+    antlr4::tree::TerminalNode *SEMICOLON();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+  };
+
+  LineContext* line();
 
   class  FunctionContext : public antlr4::ParserRuleContext {
   public:
     FunctionContext(antlr4::ParserRuleContext *parent, size_t invokingState);
+   
+    FunctionContext() = default;
+    void copyFrom(FunctionContext *context);
+    using antlr4::ParserRuleContext::copyFrom;
+
     virtual size_t getRuleIndex() const override;
+
+   
+  };
+
+  class  RecvContext : public FunctionContext {
+  public:
+    RecvContext(FunctionContext *ctx);
+
+    antlr4::tree::TerminalNode *RECV();
+    antlr4::tree::TerminalNode *LPAREN();
+    SessionContext *session();
+    antlr4::tree::TerminalNode *COMMA();
+    LabelContext *label();
+    antlr4::tree::TerminalNode *COLON();
+    ValueContext *value();
+    antlr4::tree::TerminalNode *RPAREN();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+  };
+
+  class  GenEntContext : public FunctionContext {
+  public:
+    GenEntContext(FunctionContext *ctx);
+
+    ValueContext *value();
+    antlr4::tree::TerminalNode *EQUAL();
+    antlr4::tree::TerminalNode *GENENT();
+    antlr4::tree::TerminalNode *LBRACK();
+    ParticipantContext *participant();
+    antlr4::tree::TerminalNode *RBRACK();
+    antlr4::tree::TerminalNode *LPAREN();
+    LabelContext *label();
+    antlr4::tree::TerminalNode *RPAREN();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+  };
+
+  class  InitContext : public FunctionContext {
+  public:
+    InitContext(FunctionContext *ctx);
+
+    ValueContext *value();
+    antlr4::tree::TerminalNode *EQUAL();
+    antlr4::tree::TerminalNode *INIT();
+    antlr4::tree::TerminalNode *LPAREN();
+    antlr4::tree::TerminalNode *RPAREN();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+  };
+
+  class  EntSwapContext : public FunctionContext {
+  public:
+    EntSwapContext(FunctionContext *ctx);
+
+    std::vector<antlr4::tree::TerminalNode *> LPAREN();
+    antlr4::tree::TerminalNode* LPAREN(size_t i);
+    std::vector<ValueContext *> value();
+    ValueContext* value(size_t i);
+    std::vector<antlr4::tree::TerminalNode *> COMMA();
+    antlr4::tree::TerminalNode* COMMA(size_t i);
+    std::vector<antlr4::tree::TerminalNode *> RPAREN();
+    antlr4::tree::TerminalNode* RPAREN(size_t i);
+    antlr4::tree::TerminalNode *EQUAL();
+    antlr4::tree::TerminalNode *ENTSWAP();
+    std::vector<ExpressionContext *> expression();
+    ExpressionContext* expression(size_t i);
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+  };
+
+  class  MeasureContext : public FunctionContext {
+  public:
+    MeasureContext(FunctionContext *ctx);
+
+    ValueContext *value();
+    antlr4::tree::TerminalNode *EQUAL();
+    antlr4::tree::TerminalNode *MEASURE();
+    QubitContext *qubit();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+  };
+
+  class  CloseContext : public FunctionContext {
+  public:
+    CloseContext(FunctionContext *ctx);
+
+    antlr4::tree::TerminalNode *CLOSE();
+    SessionContext *session();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+  };
+
+  class  RCXCContext : public FunctionContext {
+  public:
+    RCXCContext(FunctionContext *ctx);
+
+    antlr4::tree::TerminalNode *RCXC();
+    antlr4::tree::TerminalNode *LBRACK();
+    ParticipantContext *participant();
+    antlr4::tree::TerminalNode *RBRACK();
+    antlr4::tree::TerminalNode *LPAREN();
+    SessionContext *session();
+    std::vector<antlr4::tree::TerminalNode *> COMMA();
+    antlr4::tree::TerminalNode* COMMA(size_t i);
+    LabelContext *label();
+    std::vector<ExpressionContext *> expression();
+    ExpressionContext* expression(size_t i);
+    antlr4::tree::TerminalNode *RPAREN();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+  };
+
+  class  RCXTContext : public FunctionContext {
+  public:
+    RCXTContext(FunctionContext *ctx);
+
+    antlr4::tree::TerminalNode *RCXT();
+    antlr4::tree::TerminalNode *LBRACK();
+    ParticipantContext *participant();
+    antlr4::tree::TerminalNode *RBRACK();
+    antlr4::tree::TerminalNode *LPAREN();
+    SessionContext *session();
+    std::vector<antlr4::tree::TerminalNode *> COMMA();
+    antlr4::tree::TerminalNode* COMMA(size_t i);
+    LabelContext *label();
+    std::vector<ExpressionContext *> expression();
+    ExpressionContext* expression(size_t i);
+    antlr4::tree::TerminalNode *RPAREN();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+  };
+
+  class  FreeContext : public FunctionContext {
+  public:
+    FreeContext(FunctionContext *ctx);
+
+    antlr4::tree::TerminalNode *FREE();
+    ValueContext *value();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+  };
+
+  class  OpenContext : public FunctionContext {
+  public:
+    OpenContext(FunctionContext *ctx);
+
     SessionContext *session();
     antlr4::tree::TerminalNode *EQUAL();
     antlr4::tree::TerminalNode *OPEN();
@@ -154,31 +308,27 @@ public:
     antlr4::tree::TerminalNode *RBRACK();
     std::vector<antlr4::tree::TerminalNode *> COMMA();
     antlr4::tree::TerminalNode* COMMA(size_t i);
-    antlr4::tree::TerminalNode *CLOSE();
-    std::vector<ValueContext *> value();
-    ValueContext* value(size_t i);
-    antlr4::tree::TerminalNode *INIT();
-    std::vector<antlr4::tree::TerminalNode *> LPAREN();
-    antlr4::tree::TerminalNode* LPAREN(size_t i);
-    std::vector<antlr4::tree::TerminalNode *> RPAREN();
-    antlr4::tree::TerminalNode* RPAREN(size_t i);
-    antlr4::tree::TerminalNode *FREE();
-    antlr4::tree::TerminalNode *MEASURE();
-    QubitContext *qubit();
-    antlr4::tree::TerminalNode *GENENT();
-    LabelContext *label();
-    antlr4::tree::TerminalNode *ENTSWAP();
-    std::vector<ExpressionContext *> expression();
-    ExpressionContext* expression(size_t i);
-    antlr4::tree::TerminalNode *RECV();
-    antlr4::tree::TerminalNode *COLON();
-    antlr4::tree::TerminalNode *SEND();
-    antlr4::tree::TerminalNode *RCXC();
-    antlr4::tree::TerminalNode *RCXT();
-
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
     virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
-   
+  };
+
+  class  SendContext : public FunctionContext {
+  public:
+    SendContext(FunctionContext *ctx);
+
+    antlr4::tree::TerminalNode *SEND();
+    antlr4::tree::TerminalNode *LBRACK();
+    ParticipantContext *participant();
+    antlr4::tree::TerminalNode *RBRACK();
+    antlr4::tree::TerminalNode *LPAREN();
+    SessionContext *session();
+    antlr4::tree::TerminalNode *COMMA();
+    LabelContext *label();
+    antlr4::tree::TerminalNode *COLON();
+    ValueContext *value();
+    antlr4::tree::TerminalNode *RPAREN();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
   };
 
   FunctionContext* function();
@@ -186,17 +336,39 @@ public:
   class  Quantum_instructionContext : public antlr4::ParserRuleContext {
   public:
     Quantum_instructionContext(antlr4::ParserRuleContext *parent, size_t invokingState);
+   
+    Quantum_instructionContext() = default;
+    void copyFrom(Quantum_instructionContext *context);
+    using antlr4::ParserRuleContext::copyFrom;
+
     virtual size_t getRuleIndex() const override;
+
+   
+  };
+
+  class  ConditionalGateContext : public Quantum_instructionContext {
+  public:
+    ConditionalGateContext(Quantum_instructionContext *ctx);
+
     GateContext *gate();
-    std::vector<QubitContext *> qubit();
-    QubitContext* qubit(size_t i);
     antlr4::tree::TerminalNode *LBRACK();
     ValueContext *value();
     antlr4::tree::TerminalNode *RBRACK();
-
+    std::vector<QubitContext *> qubit();
+    QubitContext* qubit(size_t i);
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
     virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
-   
+  };
+
+  class  UsualGateContext : public Quantum_instructionContext {
+  public:
+    UsualGateContext(Quantum_instructionContext *ctx);
+
+    GateContext *gate();
+    std::vector<QubitContext *> qubit();
+    QubitContext* qubit(size_t i);
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
   };
 
   Quantum_instructionContext* quantum_instruction();

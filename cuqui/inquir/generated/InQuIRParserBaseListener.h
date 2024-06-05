@@ -25,14 +25,50 @@ public:
   virtual void enterProcess(InQuIRParser::ProcessContext * /*ctx*/) override { }
   virtual void exitProcess(InQuIRParser::ProcessContext * /*ctx*/) override { }
 
-  virtual void enterInstruction(InQuIRParser::InstructionContext * /*ctx*/) override { }
-  virtual void exitInstruction(InQuIRParser::InstructionContext * /*ctx*/) override { }
+  virtual void enterFunctionLine(InQuIRParser::FunctionLineContext * /*ctx*/) override { }
+  virtual void exitFunctionLine(InQuIRParser::FunctionLineContext * /*ctx*/) override { }
 
-  virtual void enterFunction(InQuIRParser::FunctionContext * /*ctx*/) override { }
-  virtual void exitFunction(InQuIRParser::FunctionContext * /*ctx*/) override { }
+  virtual void enterQuantumInstructionLine(InQuIRParser::QuantumInstructionLineContext * /*ctx*/) override { }
+  virtual void exitQuantumInstructionLine(InQuIRParser::QuantumInstructionLineContext * /*ctx*/) override { }
 
-  virtual void enterQuantum_instruction(InQuIRParser::Quantum_instructionContext * /*ctx*/) override { }
-  virtual void exitQuantum_instruction(InQuIRParser::Quantum_instructionContext * /*ctx*/) override { }
+  virtual void enterOpen(InQuIRParser::OpenContext * /*ctx*/) override { }
+  virtual void exitOpen(InQuIRParser::OpenContext * /*ctx*/) override { }
+
+  virtual void enterClose(InQuIRParser::CloseContext * /*ctx*/) override { }
+  virtual void exitClose(InQuIRParser::CloseContext * /*ctx*/) override { }
+
+  virtual void enterInit(InQuIRParser::InitContext * /*ctx*/) override { }
+  virtual void exitInit(InQuIRParser::InitContext * /*ctx*/) override { }
+
+  virtual void enterFree(InQuIRParser::FreeContext * /*ctx*/) override { }
+  virtual void exitFree(InQuIRParser::FreeContext * /*ctx*/) override { }
+
+  virtual void enterMeasure(InQuIRParser::MeasureContext * /*ctx*/) override { }
+  virtual void exitMeasure(InQuIRParser::MeasureContext * /*ctx*/) override { }
+
+  virtual void enterGenEnt(InQuIRParser::GenEntContext * /*ctx*/) override { }
+  virtual void exitGenEnt(InQuIRParser::GenEntContext * /*ctx*/) override { }
+
+  virtual void enterEntSwap(InQuIRParser::EntSwapContext * /*ctx*/) override { }
+  virtual void exitEntSwap(InQuIRParser::EntSwapContext * /*ctx*/) override { }
+
+  virtual void enterRecv(InQuIRParser::RecvContext * /*ctx*/) override { }
+  virtual void exitRecv(InQuIRParser::RecvContext * /*ctx*/) override { }
+
+  virtual void enterSend(InQuIRParser::SendContext * /*ctx*/) override { }
+  virtual void exitSend(InQuIRParser::SendContext * /*ctx*/) override { }
+
+  virtual void enterRCXC(InQuIRParser::RCXCContext * /*ctx*/) override { }
+  virtual void exitRCXC(InQuIRParser::RCXCContext * /*ctx*/) override { }
+
+  virtual void enterRCXT(InQuIRParser::RCXTContext * /*ctx*/) override { }
+  virtual void exitRCXT(InQuIRParser::RCXTContext * /*ctx*/) override { }
+
+  virtual void enterUsualGate(InQuIRParser::UsualGateContext * /*ctx*/) override { }
+  virtual void exitUsualGate(InQuIRParser::UsualGateContext * /*ctx*/) override { }
+
+  virtual void enterConditionalGate(InQuIRParser::ConditionalGateContext * /*ctx*/) override { }
+  virtual void exitConditionalGate(InQuIRParser::ConditionalGateContext * /*ctx*/) override { }
 
   virtual void enterExpression(InQuIRParser::ExpressionContext * /*ctx*/) override { }
   virtual void exitExpression(InQuIRParser::ExpressionContext * /*ctx*/) override { }

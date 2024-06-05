@@ -23,14 +23,50 @@ public:
   virtual void enterProcess(InQuIRParser::ProcessContext *ctx) = 0;
   virtual void exitProcess(InQuIRParser::ProcessContext *ctx) = 0;
 
-  virtual void enterInstruction(InQuIRParser::InstructionContext *ctx) = 0;
-  virtual void exitInstruction(InQuIRParser::InstructionContext *ctx) = 0;
+  virtual void enterFunctionLine(InQuIRParser::FunctionLineContext *ctx) = 0;
+  virtual void exitFunctionLine(InQuIRParser::FunctionLineContext *ctx) = 0;
 
-  virtual void enterFunction(InQuIRParser::FunctionContext *ctx) = 0;
-  virtual void exitFunction(InQuIRParser::FunctionContext *ctx) = 0;
+  virtual void enterQuantumInstructionLine(InQuIRParser::QuantumInstructionLineContext *ctx) = 0;
+  virtual void exitQuantumInstructionLine(InQuIRParser::QuantumInstructionLineContext *ctx) = 0;
 
-  virtual void enterQuantum_instruction(InQuIRParser::Quantum_instructionContext *ctx) = 0;
-  virtual void exitQuantum_instruction(InQuIRParser::Quantum_instructionContext *ctx) = 0;
+  virtual void enterOpen(InQuIRParser::OpenContext *ctx) = 0;
+  virtual void exitOpen(InQuIRParser::OpenContext *ctx) = 0;
+
+  virtual void enterClose(InQuIRParser::CloseContext *ctx) = 0;
+  virtual void exitClose(InQuIRParser::CloseContext *ctx) = 0;
+
+  virtual void enterInit(InQuIRParser::InitContext *ctx) = 0;
+  virtual void exitInit(InQuIRParser::InitContext *ctx) = 0;
+
+  virtual void enterFree(InQuIRParser::FreeContext *ctx) = 0;
+  virtual void exitFree(InQuIRParser::FreeContext *ctx) = 0;
+
+  virtual void enterMeasure(InQuIRParser::MeasureContext *ctx) = 0;
+  virtual void exitMeasure(InQuIRParser::MeasureContext *ctx) = 0;
+
+  virtual void enterGenEnt(InQuIRParser::GenEntContext *ctx) = 0;
+  virtual void exitGenEnt(InQuIRParser::GenEntContext *ctx) = 0;
+
+  virtual void enterEntSwap(InQuIRParser::EntSwapContext *ctx) = 0;
+  virtual void exitEntSwap(InQuIRParser::EntSwapContext *ctx) = 0;
+
+  virtual void enterRecv(InQuIRParser::RecvContext *ctx) = 0;
+  virtual void exitRecv(InQuIRParser::RecvContext *ctx) = 0;
+
+  virtual void enterSend(InQuIRParser::SendContext *ctx) = 0;
+  virtual void exitSend(InQuIRParser::SendContext *ctx) = 0;
+
+  virtual void enterRCXC(InQuIRParser::RCXCContext *ctx) = 0;
+  virtual void exitRCXC(InQuIRParser::RCXCContext *ctx) = 0;
+
+  virtual void enterRCXT(InQuIRParser::RCXTContext *ctx) = 0;
+  virtual void exitRCXT(InQuIRParser::RCXTContext *ctx) = 0;
+
+  virtual void enterUsualGate(InQuIRParser::UsualGateContext *ctx) = 0;
+  virtual void exitUsualGate(InQuIRParser::UsualGateContext *ctx) = 0;
+
+  virtual void enterConditionalGate(InQuIRParser::ConditionalGateContext *ctx) = 0;
+  virtual void exitConditionalGate(InQuIRParser::ConditionalGateContext *ctx) = 0;
 
   virtual void enterExpression(InQuIRParser::ExpressionContext *ctx) = 0;
   virtual void exitExpression(InQuIRParser::ExpressionContext *ctx) = 0;

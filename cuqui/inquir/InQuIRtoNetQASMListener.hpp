@@ -6,6 +6,11 @@ class InQuIRtoNetQASMListener : public InQuIRParserBaseListener {
     std::vector<std::string> netqasm_files;
     std::string current_file;
     int current_file_num;
+    
+    // Check if it is a good practice
+    int array_counter;
+    int qubit_counter;
+    int classical_counter;
 
 
 public:

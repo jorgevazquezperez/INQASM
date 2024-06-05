@@ -11,6 +11,9 @@ void compile(const std::string &src) {
     InQuIRParser parser(&tokens);
 
     InQuIRParser::MainprogramContext* tree = parser.mainprogram();
+
+    //std::cout << tree->toStringTree(&parser) << std::endl;
+
     InQuIRtoNetQASMListener listener;
     tree::ParseTreeWalker::DEFAULT.walk(&listener, tree);
 }

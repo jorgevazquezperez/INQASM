@@ -52,7 +52,7 @@ void inquirparserParserInitialize() {
 #endif
   auto staticData = std::make_unique<InQuIRParserStaticData>(
     std::vector<std::string>{
-      "mainprogram", "system", "process", "instruction", "function", "quantum_instruction", 
+      "mainprogram", "system", "process", "line", "function", "quantum_instruction", 
       "expression", "value", "gate", "session", "participant", "label", 
       "qubit"
     },
@@ -73,86 +73,75 @@ void inquirparserParserInitialize() {
     }
   );
   static const int32_t serializedATNSegment[] = {
-  	4,1,44,257,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,6,2,
+  	4,1,44,224,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,6,2,
   	7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,1,0,1,0,1,1,5,1,30,
   	8,1,10,1,12,1,33,9,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,43,8,1,1,2,1,
-  	2,1,2,5,2,48,8,2,10,2,12,2,51,9,2,1,2,1,2,1,3,1,3,1,3,1,3,1,3,1,3,1,3,
-  	1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,
-  	3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,3,3,94,8,3,
-  	1,4,1,4,1,4,1,4,1,4,1,4,1,4,5,4,103,8,4,10,4,12,4,106,9,4,1,4,1,4,1,4,
-  	1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,
+  	2,1,2,5,2,48,8,2,10,2,12,2,51,9,2,1,2,1,2,1,3,1,3,1,3,1,3,1,3,1,3,3,3,
+  	61,8,3,1,4,1,4,1,4,1,4,1,4,1,4,1,4,5,4,70,8,4,10,4,12,4,73,9,4,1,4,1,
   	4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,
   	1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,
   	4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,
-  	1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,3,4,197,
-  	8,4,1,5,1,5,1,5,5,5,202,8,5,10,5,12,5,205,9,5,1,5,1,5,1,5,1,5,1,5,1,5,
-  	5,5,213,8,5,10,5,12,5,216,9,5,3,5,218,8,5,1,6,1,6,1,6,1,6,1,6,1,6,3,6,
-  	226,8,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,5,6,237,8,6,10,6,12,6,240,
-  	9,6,1,7,1,7,1,7,3,7,245,8,7,1,8,1,8,1,9,1,9,1,10,1,10,1,11,1,11,1,12,
-  	1,12,1,12,0,1,12,13,0,2,4,6,8,10,12,14,16,18,20,22,24,0,1,1,0,12,18,271,
-  	0,26,1,0,0,0,2,42,1,0,0,0,4,44,1,0,0,0,6,93,1,0,0,0,8,196,1,0,0,0,10,
-  	217,1,0,0,0,12,225,1,0,0,0,14,244,1,0,0,0,16,246,1,0,0,0,18,248,1,0,0,
-  	0,20,250,1,0,0,0,22,252,1,0,0,0,24,254,1,0,0,0,26,27,3,2,1,0,27,1,1,0,
-  	0,0,28,30,3,4,2,0,29,28,1,0,0,0,30,33,1,0,0,0,31,29,1,0,0,0,31,32,1,0,
-  	0,0,32,34,1,0,0,0,33,31,1,0,0,0,34,43,5,0,0,1,35,36,5,31,0,0,36,37,3,
-  	2,1,0,37,38,5,39,0,0,38,39,3,2,1,0,39,40,5,32,0,0,40,41,5,0,0,1,41,43,
-  	1,0,0,0,42,31,1,0,0,0,42,35,1,0,0,0,43,3,1,0,0,0,44,45,3,20,10,0,45,49,
-  	5,29,0,0,46,48,3,6,3,0,47,46,1,0,0,0,48,51,1,0,0,0,49,47,1,0,0,0,49,50,
-  	1,0,0,0,50,52,1,0,0,0,51,49,1,0,0,0,52,53,5,30,0,0,53,5,1,0,0,0,54,55,
-  	3,8,4,0,55,56,5,37,0,0,56,94,1,0,0,0,57,58,3,14,7,0,58,59,5,40,0,0,59,
-  	60,3,12,6,0,60,61,5,37,0,0,61,94,1,0,0,0,62,63,3,10,5,0,63,64,5,37,0,
-  	0,64,94,1,0,0,0,65,66,5,26,0,0,66,67,3,12,6,0,67,68,5,28,0,0,68,69,3,
-  	4,2,0,69,70,5,27,0,0,70,71,3,4,2,0,71,94,1,0,0,0,72,73,3,18,9,0,73,74,
-  	5,33,0,0,74,75,3,4,2,0,75,76,5,34,0,0,76,77,5,41,0,0,77,78,5,31,0,0,78,
-  	79,3,22,11,0,79,80,5,36,0,0,80,81,3,12,6,0,81,82,5,32,0,0,82,83,5,37,
-  	0,0,83,94,1,0,0,0,84,85,3,18,9,0,85,86,5,42,0,0,86,87,5,31,0,0,87,88,
-  	3,22,11,0,88,89,5,36,0,0,89,90,3,12,6,0,90,91,5,32,0,0,91,92,5,37,0,0,
-  	92,94,1,0,0,0,93,54,1,0,0,0,93,57,1,0,0,0,93,62,1,0,0,0,93,65,1,0,0,0,
-  	93,72,1,0,0,0,93,84,1,0,0,0,94,7,1,0,0,0,95,96,3,18,9,0,96,97,5,40,0,
-  	0,97,98,5,1,0,0,98,99,5,33,0,0,99,104,3,20,10,0,100,101,5,35,0,0,101,
-  	103,3,20,10,0,102,100,1,0,0,0,103,106,1,0,0,0,104,102,1,0,0,0,104,105,
-  	1,0,0,0,105,107,1,0,0,0,106,104,1,0,0,0,107,108,5,34,0,0,108,197,1,0,
-  	0,0,109,110,5,2,0,0,110,197,3,18,9,0,111,112,3,14,7,0,112,113,5,40,0,
-  	0,113,114,5,3,0,0,114,115,5,31,0,0,115,116,5,32,0,0,116,197,1,0,0,0,117,
-  	118,5,4,0,0,118,197,3,14,7,0,119,120,3,14,7,0,120,121,5,40,0,0,121,122,
-  	5,5,0,0,122,123,3,24,12,0,123,197,1,0,0,0,124,125,3,14,7,0,125,126,5,
-  	40,0,0,126,127,5,6,0,0,127,128,5,33,0,0,128,129,3,20,10,0,129,130,5,34,
-  	0,0,130,131,5,31,0,0,131,132,3,22,11,0,132,133,5,32,0,0,133,197,1,0,0,
-  	0,134,135,5,31,0,0,135,136,3,14,7,0,136,137,5,35,0,0,137,138,3,14,7,0,
-  	138,139,5,32,0,0,139,140,5,40,0,0,140,141,5,7,0,0,141,142,5,31,0,0,142,
-  	143,3,12,6,0,143,144,5,35,0,0,144,145,3,12,6,0,145,146,5,32,0,0,146,197,
-  	1,0,0,0,147,148,5,8,0,0,148,149,5,31,0,0,149,150,3,18,9,0,150,151,5,35,
-  	0,0,151,152,3,22,11,0,152,153,5,36,0,0,153,154,3,14,7,0,154,155,5,32,
-  	0,0,155,197,1,0,0,0,156,157,5,9,0,0,157,158,5,33,0,0,158,159,3,20,10,
-  	0,159,160,5,34,0,0,160,161,5,31,0,0,161,162,3,18,9,0,162,163,5,35,0,0,
-  	163,164,3,22,11,0,164,165,5,36,0,0,165,166,3,14,7,0,166,167,5,32,0,0,
-  	167,197,1,0,0,0,168,169,5,10,0,0,169,170,5,33,0,0,170,171,3,20,10,0,171,
-  	172,5,34,0,0,172,173,5,31,0,0,173,174,3,18,9,0,174,175,5,35,0,0,175,176,
-  	3,22,11,0,176,177,5,35,0,0,177,178,3,12,6,0,178,179,5,35,0,0,179,180,
-  	3,12,6,0,180,181,5,32,0,0,181,197,1,0,0,0,182,183,5,11,0,0,183,184,5,
-  	33,0,0,184,185,3,20,10,0,185,186,5,34,0,0,186,187,5,31,0,0,187,188,3,
-  	18,9,0,188,189,5,35,0,0,189,190,3,22,11,0,190,191,5,35,0,0,191,192,3,
-  	12,6,0,192,193,5,35,0,0,193,194,3,12,6,0,194,195,5,32,0,0,195,197,1,0,
-  	0,0,196,95,1,0,0,0,196,109,1,0,0,0,196,111,1,0,0,0,196,117,1,0,0,0,196,
-  	119,1,0,0,0,196,124,1,0,0,0,196,134,1,0,0,0,196,147,1,0,0,0,196,156,1,
-  	0,0,0,196,168,1,0,0,0,196,182,1,0,0,0,197,9,1,0,0,0,198,199,3,16,8,0,
-  	199,203,3,24,12,0,200,202,3,24,12,0,201,200,1,0,0,0,202,205,1,0,0,0,203,
-  	201,1,0,0,0,203,204,1,0,0,0,204,218,1,0,0,0,205,203,1,0,0,0,206,207,3,
-  	16,8,0,207,208,5,33,0,0,208,209,3,14,7,0,209,210,5,34,0,0,210,214,3,24,
-  	12,0,211,213,3,24,12,0,212,211,1,0,0,0,213,216,1,0,0,0,214,212,1,0,0,
-  	0,214,215,1,0,0,0,215,218,1,0,0,0,216,214,1,0,0,0,217,198,1,0,0,0,217,
-  	206,1,0,0,0,218,11,1,0,0,0,219,220,6,6,-1,0,220,226,3,14,7,0,221,222,
-  	5,31,0,0,222,223,3,12,6,0,223,224,5,32,0,0,224,226,1,0,0,0,225,219,1,
-  	0,0,0,225,221,1,0,0,0,226,238,1,0,0,0,227,228,10,4,0,0,228,229,5,23,0,
-  	0,229,237,3,12,6,5,230,231,10,3,0,0,231,232,5,24,0,0,232,237,3,12,6,4,
-  	233,234,10,2,0,0,234,235,5,25,0,0,235,237,3,12,6,3,236,227,1,0,0,0,236,
-  	230,1,0,0,0,236,233,1,0,0,0,237,240,1,0,0,0,238,236,1,0,0,0,238,239,1,
-  	0,0,0,239,13,1,0,0,0,240,238,1,0,0,0,241,245,3,24,12,0,242,245,5,21,0,
-  	0,243,245,5,19,0,0,244,241,1,0,0,0,244,242,1,0,0,0,244,243,1,0,0,0,245,
-  	15,1,0,0,0,246,247,7,0,0,0,247,17,1,0,0,0,248,249,5,19,0,0,249,19,1,0,
-  	0,0,250,251,5,21,0,0,251,21,1,0,0,0,252,253,5,19,0,0,253,23,1,0,0,0,254,
-  	255,5,19,0,0,255,25,1,0,0,0,13,31,42,49,93,104,196,203,214,217,225,236,
-  	238,244
+  	1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,
+  	4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,
+  	3,4,164,8,4,1,5,1,5,1,5,5,5,169,8,5,10,5,12,5,172,9,5,1,5,1,5,1,5,1,5,
+  	1,5,1,5,5,5,180,8,5,10,5,12,5,183,9,5,3,5,185,8,5,1,6,1,6,1,6,1,6,1,6,
+  	1,6,3,6,193,8,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,5,6,204,8,6,10,6,
+  	12,6,207,9,6,1,7,1,7,1,7,3,7,212,8,7,1,8,1,8,1,9,1,9,1,10,1,10,1,11,1,
+  	11,1,12,1,12,1,12,0,1,12,13,0,2,4,6,8,10,12,14,16,18,20,22,24,0,1,1,0,
+  	12,18,234,0,26,1,0,0,0,2,42,1,0,0,0,4,44,1,0,0,0,6,60,1,0,0,0,8,163,1,
+  	0,0,0,10,184,1,0,0,0,12,192,1,0,0,0,14,211,1,0,0,0,16,213,1,0,0,0,18,
+  	215,1,0,0,0,20,217,1,0,0,0,22,219,1,0,0,0,24,221,1,0,0,0,26,27,3,2,1,
+  	0,27,1,1,0,0,0,28,30,3,4,2,0,29,28,1,0,0,0,30,33,1,0,0,0,31,29,1,0,0,
+  	0,31,32,1,0,0,0,32,34,1,0,0,0,33,31,1,0,0,0,34,43,5,0,0,1,35,36,5,31,
+  	0,0,36,37,3,2,1,0,37,38,5,39,0,0,38,39,3,2,1,0,39,40,5,32,0,0,40,41,5,
+  	0,0,1,41,43,1,0,0,0,42,31,1,0,0,0,42,35,1,0,0,0,43,3,1,0,0,0,44,45,3,
+  	20,10,0,45,49,5,29,0,0,46,48,3,6,3,0,47,46,1,0,0,0,48,51,1,0,0,0,49,47,
+  	1,0,0,0,49,50,1,0,0,0,50,52,1,0,0,0,51,49,1,0,0,0,52,53,5,30,0,0,53,5,
+  	1,0,0,0,54,55,3,8,4,0,55,56,5,37,0,0,56,61,1,0,0,0,57,58,3,10,5,0,58,
+  	59,5,37,0,0,59,61,1,0,0,0,60,54,1,0,0,0,60,57,1,0,0,0,61,7,1,0,0,0,62,
+  	63,3,18,9,0,63,64,5,40,0,0,64,65,5,1,0,0,65,66,5,33,0,0,66,71,3,20,10,
+  	0,67,68,5,35,0,0,68,70,3,20,10,0,69,67,1,0,0,0,70,73,1,0,0,0,71,69,1,
+  	0,0,0,71,72,1,0,0,0,72,74,1,0,0,0,73,71,1,0,0,0,74,75,5,34,0,0,75,164,
+  	1,0,0,0,76,77,5,2,0,0,77,164,3,18,9,0,78,79,3,14,7,0,79,80,5,40,0,0,80,
+  	81,5,3,0,0,81,82,5,31,0,0,82,83,5,32,0,0,83,164,1,0,0,0,84,85,5,4,0,0,
+  	85,164,3,14,7,0,86,87,3,14,7,0,87,88,5,40,0,0,88,89,5,5,0,0,89,90,3,24,
+  	12,0,90,164,1,0,0,0,91,92,3,14,7,0,92,93,5,40,0,0,93,94,5,6,0,0,94,95,
+  	5,33,0,0,95,96,3,20,10,0,96,97,5,34,0,0,97,98,5,31,0,0,98,99,3,22,11,
+  	0,99,100,5,32,0,0,100,164,1,0,0,0,101,102,5,31,0,0,102,103,3,14,7,0,103,
+  	104,5,35,0,0,104,105,3,14,7,0,105,106,5,32,0,0,106,107,5,40,0,0,107,108,
+  	5,7,0,0,108,109,5,31,0,0,109,110,3,12,6,0,110,111,5,35,0,0,111,112,3,
+  	12,6,0,112,113,5,32,0,0,113,164,1,0,0,0,114,115,5,8,0,0,115,116,5,31,
+  	0,0,116,117,3,18,9,0,117,118,5,35,0,0,118,119,3,22,11,0,119,120,5,36,
+  	0,0,120,121,3,14,7,0,121,122,5,32,0,0,122,164,1,0,0,0,123,124,5,9,0,0,
+  	124,125,5,33,0,0,125,126,3,20,10,0,126,127,5,34,0,0,127,128,5,31,0,0,
+  	128,129,3,18,9,0,129,130,5,35,0,0,130,131,3,22,11,0,131,132,5,36,0,0,
+  	132,133,3,14,7,0,133,134,5,32,0,0,134,164,1,0,0,0,135,136,5,10,0,0,136,
+  	137,5,33,0,0,137,138,3,20,10,0,138,139,5,34,0,0,139,140,5,31,0,0,140,
+  	141,3,18,9,0,141,142,5,35,0,0,142,143,3,22,11,0,143,144,5,35,0,0,144,
+  	145,3,12,6,0,145,146,5,35,0,0,146,147,3,12,6,0,147,148,5,32,0,0,148,164,
+  	1,0,0,0,149,150,5,11,0,0,150,151,5,33,0,0,151,152,3,20,10,0,152,153,5,
+  	34,0,0,153,154,5,31,0,0,154,155,3,18,9,0,155,156,5,35,0,0,156,157,3,22,
+  	11,0,157,158,5,35,0,0,158,159,3,12,6,0,159,160,5,35,0,0,160,161,3,12,
+  	6,0,161,162,5,32,0,0,162,164,1,0,0,0,163,62,1,0,0,0,163,76,1,0,0,0,163,
+  	78,1,0,0,0,163,84,1,0,0,0,163,86,1,0,0,0,163,91,1,0,0,0,163,101,1,0,0,
+  	0,163,114,1,0,0,0,163,123,1,0,0,0,163,135,1,0,0,0,163,149,1,0,0,0,164,
+  	9,1,0,0,0,165,166,3,16,8,0,166,170,3,24,12,0,167,169,3,24,12,0,168,167,
+  	1,0,0,0,169,172,1,0,0,0,170,168,1,0,0,0,170,171,1,0,0,0,171,185,1,0,0,
+  	0,172,170,1,0,0,0,173,174,3,16,8,0,174,175,5,33,0,0,175,176,3,14,7,0,
+  	176,177,5,34,0,0,177,181,3,24,12,0,178,180,3,24,12,0,179,178,1,0,0,0,
+  	180,183,1,0,0,0,181,179,1,0,0,0,181,182,1,0,0,0,182,185,1,0,0,0,183,181,
+  	1,0,0,0,184,165,1,0,0,0,184,173,1,0,0,0,185,11,1,0,0,0,186,187,6,6,-1,
+  	0,187,193,3,14,7,0,188,189,5,31,0,0,189,190,3,12,6,0,190,191,5,32,0,0,
+  	191,193,1,0,0,0,192,186,1,0,0,0,192,188,1,0,0,0,193,205,1,0,0,0,194,195,
+  	10,4,0,0,195,196,5,23,0,0,196,204,3,12,6,5,197,198,10,3,0,0,198,199,5,
+  	24,0,0,199,204,3,12,6,4,200,201,10,2,0,0,201,202,5,25,0,0,202,204,3,12,
+  	6,3,203,194,1,0,0,0,203,197,1,0,0,0,203,200,1,0,0,0,204,207,1,0,0,0,205,
+  	203,1,0,0,0,205,206,1,0,0,0,206,13,1,0,0,0,207,205,1,0,0,0,208,212,3,
+  	24,12,0,209,212,5,21,0,0,210,212,5,19,0,0,211,208,1,0,0,0,211,209,1,0,
+  	0,0,211,210,1,0,0,0,212,15,1,0,0,0,213,214,7,0,0,0,214,17,1,0,0,0,215,
+  	216,5,19,0,0,216,19,1,0,0,0,217,218,5,21,0,0,218,21,1,0,0,0,219,220,5,
+  	19,0,0,220,23,1,0,0,0,221,222,5,19,0,0,222,25,1,0,0,0,13,31,42,49,60,
+  	71,163,170,181,184,192,203,205,211
   };
   staticData->serializedATN = antlr4::atn::SerializedATNView(serializedATNSegment, sizeof(serializedATNSegment) / sizeof(serializedATNSegment[0]));
 
@@ -392,12 +381,12 @@ tree::TerminalNode* InQuIRParser::ProcessContext::RCURLY() {
   return getToken(InQuIRParser::RCURLY, 0);
 }
 
-std::vector<InQuIRParser::InstructionContext *> InQuIRParser::ProcessContext::instruction() {
-  return getRuleContexts<InQuIRParser::InstructionContext>();
+std::vector<InQuIRParser::LineContext *> InQuIRParser::ProcessContext::line() {
+  return getRuleContexts<InQuIRParser::LineContext>();
 }
 
-InQuIRParser::InstructionContext* InQuIRParser::ProcessContext::instruction(size_t i) {
-  return getRuleContext<InQuIRParser::InstructionContext>(i);
+InQuIRParser::LineContext* InQuIRParser::ProcessContext::line(size_t i) {
+  return getRuleContext<InQuIRParser::LineContext>(i);
 }
 
 
@@ -439,9 +428,9 @@ InQuIRParser::ProcessContext* InQuIRParser::process() {
     _errHandler->sync(this);
     _la = _input->LA(1);
     while ((((_la & ~ 0x3fULL) == 0) &&
-      ((1ULL << _la) & 2217738004) != 0)) {
+      ((1ULL << _la) & 2150629140) != 0)) {
       setState(46);
-      instruction();
+      line();
       setState(51);
       _errHandler->sync(this);
       _la = _input->LA(1);
@@ -459,112 +448,68 @@ InQuIRParser::ProcessContext* InQuIRParser::process() {
   return _localctx;
 }
 
-//----------------- InstructionContext ------------------------------------------------------------------
+//----------------- LineContext ------------------------------------------------------------------
 
-InQuIRParser::InstructionContext::InstructionContext(ParserRuleContext *parent, size_t invokingState)
+InQuIRParser::LineContext::LineContext(ParserRuleContext *parent, size_t invokingState)
   : ParserRuleContext(parent, invokingState) {
 }
 
-InQuIRParser::FunctionContext* InQuIRParser::InstructionContext::function() {
-  return getRuleContext<InQuIRParser::FunctionContext>(0);
+
+size_t InQuIRParser::LineContext::getRuleIndex() const {
+  return InQuIRParser::RuleLine;
 }
 
-tree::TerminalNode* InQuIRParser::InstructionContext::SEMICOLON() {
-  return getToken(InQuIRParser::SEMICOLON, 0);
+void InQuIRParser::LineContext::copyFrom(LineContext *ctx) {
+  ParserRuleContext::copyFrom(ctx);
 }
 
-InQuIRParser::ValueContext* InQuIRParser::InstructionContext::value() {
-  return getRuleContext<InQuIRParser::ValueContext>(0);
-}
+//----------------- QuantumInstructionLineContext ------------------------------------------------------------------
 
-tree::TerminalNode* InQuIRParser::InstructionContext::EQUAL() {
-  return getToken(InQuIRParser::EQUAL, 0);
-}
-
-InQuIRParser::ExpressionContext* InQuIRParser::InstructionContext::expression() {
-  return getRuleContext<InQuIRParser::ExpressionContext>(0);
-}
-
-InQuIRParser::Quantum_instructionContext* InQuIRParser::InstructionContext::quantum_instruction() {
+InQuIRParser::Quantum_instructionContext* InQuIRParser::QuantumInstructionLineContext::quantum_instruction() {
   return getRuleContext<InQuIRParser::Quantum_instructionContext>(0);
 }
 
-tree::TerminalNode* InQuIRParser::InstructionContext::IF() {
-  return getToken(InQuIRParser::IF, 0);
+tree::TerminalNode* InQuIRParser::QuantumInstructionLineContext::SEMICOLON() {
+  return getToken(InQuIRParser::SEMICOLON, 0);
 }
 
-tree::TerminalNode* InQuIRParser::InstructionContext::THEN() {
-  return getToken(InQuIRParser::THEN, 0);
-}
+InQuIRParser::QuantumInstructionLineContext::QuantumInstructionLineContext(LineContext *ctx) { copyFrom(ctx); }
 
-std::vector<InQuIRParser::ProcessContext *> InQuIRParser::InstructionContext::process() {
-  return getRuleContexts<InQuIRParser::ProcessContext>();
-}
-
-InQuIRParser::ProcessContext* InQuIRParser::InstructionContext::process(size_t i) {
-  return getRuleContext<InQuIRParser::ProcessContext>(i);
-}
-
-tree::TerminalNode* InQuIRParser::InstructionContext::ELSE() {
-  return getToken(InQuIRParser::ELSE, 0);
-}
-
-InQuIRParser::SessionContext* InQuIRParser::InstructionContext::session() {
-  return getRuleContext<InQuIRParser::SessionContext>(0);
-}
-
-tree::TerminalNode* InQuIRParser::InstructionContext::LBRACK() {
-  return getToken(InQuIRParser::LBRACK, 0);
-}
-
-tree::TerminalNode* InQuIRParser::InstructionContext::RBRACK() {
-  return getToken(InQuIRParser::RBRACK, 0);
-}
-
-tree::TerminalNode* InQuIRParser::InstructionContext::EXCLAM() {
-  return getToken(InQuIRParser::EXCLAM, 0);
-}
-
-tree::TerminalNode* InQuIRParser::InstructionContext::LPAREN() {
-  return getToken(InQuIRParser::LPAREN, 0);
-}
-
-InQuIRParser::LabelContext* InQuIRParser::InstructionContext::label() {
-  return getRuleContext<InQuIRParser::LabelContext>(0);
-}
-
-tree::TerminalNode* InQuIRParser::InstructionContext::COLON() {
-  return getToken(InQuIRParser::COLON, 0);
-}
-
-tree::TerminalNode* InQuIRParser::InstructionContext::RPAREN() {
-  return getToken(InQuIRParser::RPAREN, 0);
-}
-
-tree::TerminalNode* InQuIRParser::InstructionContext::QUESTION() {
-  return getToken(InQuIRParser::QUESTION, 0);
-}
-
-
-size_t InQuIRParser::InstructionContext::getRuleIndex() const {
-  return InQuIRParser::RuleInstruction;
-}
-
-void InQuIRParser::InstructionContext::enterRule(tree::ParseTreeListener *listener) {
+void InQuIRParser::QuantumInstructionLineContext::enterRule(tree::ParseTreeListener *listener) {
   auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
   if (parserListener != nullptr)
-    parserListener->enterInstruction(this);
+    parserListener->enterQuantumInstructionLine(this);
 }
-
-void InQuIRParser::InstructionContext::exitRule(tree::ParseTreeListener *listener) {
+void InQuIRParser::QuantumInstructionLineContext::exitRule(tree::ParseTreeListener *listener) {
   auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
   if (parserListener != nullptr)
-    parserListener->exitInstruction(this);
+    parserListener->exitQuantumInstructionLine(this);
+}
+//----------------- FunctionLineContext ------------------------------------------------------------------
+
+InQuIRParser::FunctionContext* InQuIRParser::FunctionLineContext::function() {
+  return getRuleContext<InQuIRParser::FunctionContext>(0);
 }
 
-InQuIRParser::InstructionContext* InQuIRParser::instruction() {
-  InstructionContext *_localctx = _tracker.createInstance<InstructionContext>(_ctx, getState());
-  enterRule(_localctx, 6, InQuIRParser::RuleInstruction);
+tree::TerminalNode* InQuIRParser::FunctionLineContext::SEMICOLON() {
+  return getToken(InQuIRParser::SEMICOLON, 0);
+}
+
+InQuIRParser::FunctionLineContext::FunctionLineContext(LineContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::FunctionLineContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterFunctionLine(this);
+}
+void InQuIRParser::FunctionLineContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitFunctionLine(this);
+}
+InQuIRParser::LineContext* InQuIRParser::line() {
+  LineContext *_localctx = _tracker.createInstance<LineContext>(_ctx, getState());
+  enterRule(_localctx, 6, InQuIRParser::RuleLine);
 
 #if __cplusplus > 201703L
   auto onExit = finally([=, this] {
@@ -574,107 +519,45 @@ InQuIRParser::InstructionContext* InQuIRParser::instruction() {
     exitRule();
   });
   try {
-    setState(93);
+    setState(60);
     _errHandler->sync(this);
-    switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 3, _ctx)) {
-    case 1: {
-      enterOuterAlt(_localctx, 1);
-      setState(54);
-      function();
-      setState(55);
-      match(InQuIRParser::SEMICOLON);
-      break;
-    }
+    switch (_input->LA(1)) {
+      case InQuIRParser::CLOSE:
+      case InQuIRParser::FREE:
+      case InQuIRParser::RECV:
+      case InQuIRParser::SEND:
+      case InQuIRParser::RCXC:
+      case InQuIRParser::RCXT:
+      case InQuIRParser::ID:
+      case InQuIRParser::INT:
+      case InQuIRParser::LPAREN: {
+        _localctx = _tracker.createInstance<InQuIRParser::FunctionLineContext>(_localctx);
+        enterOuterAlt(_localctx, 1);
+        setState(54);
+        function();
+        setState(55);
+        match(InQuIRParser::SEMICOLON);
+        break;
+      }
 
-    case 2: {
-      enterOuterAlt(_localctx, 2);
-      setState(57);
-      value();
-      setState(58);
-      match(InQuIRParser::EQUAL);
-      setState(59);
-      expression(0);
-      setState(60);
-      match(InQuIRParser::SEMICOLON);
-      break;
-    }
-
-    case 3: {
-      enterOuterAlt(_localctx, 3);
-      setState(62);
-      quantum_instruction();
-      setState(63);
-      match(InQuIRParser::SEMICOLON);
-      break;
-    }
-
-    case 4: {
-      enterOuterAlt(_localctx, 4);
-      setState(65);
-      match(InQuIRParser::IF);
-      setState(66);
-      expression(0);
-      setState(67);
-      match(InQuIRParser::THEN);
-      setState(68);
-      process();
-      setState(69);
-      match(InQuIRParser::ELSE);
-      setState(70);
-      process();
-      break;
-    }
-
-    case 5: {
-      enterOuterAlt(_localctx, 5);
-      setState(72);
-      session();
-      setState(73);
-      match(InQuIRParser::LBRACK);
-      setState(74);
-      process();
-      setState(75);
-      match(InQuIRParser::RBRACK);
-      setState(76);
-      match(InQuIRParser::EXCLAM);
-      setState(77);
-      match(InQuIRParser::LPAREN);
-      setState(78);
-      label();
-      setState(79);
-      match(InQuIRParser::COLON);
-      setState(80);
-      expression(0);
-      setState(81);
-      match(InQuIRParser::RPAREN);
-      setState(82);
-      match(InQuIRParser::SEMICOLON);
-      break;
-    }
-
-    case 6: {
-      enterOuterAlt(_localctx, 6);
-      setState(84);
-      session();
-      setState(85);
-      match(InQuIRParser::QUESTION);
-      setState(86);
-      match(InQuIRParser::LPAREN);
-      setState(87);
-      label();
-      setState(88);
-      match(InQuIRParser::COLON);
-      setState(89);
-      expression(0);
-      setState(90);
-      match(InQuIRParser::RPAREN);
-      setState(91);
-      match(InQuIRParser::SEMICOLON);
-      break;
-    }
+      case InQuIRParser::H:
+      case InQuIRParser::X:
+      case InQuIRParser::Y:
+      case InQuIRParser::Z:
+      case InQuIRParser::CX:
+      case InQuIRParser::CZ:
+      case InQuIRParser::SWAP: {
+        _localctx = _tracker.createInstance<InQuIRParser::QuantumInstructionLineContext>(_localctx);
+        enterOuterAlt(_localctx, 2);
+        setState(57);
+        quantum_instruction();
+        setState(58);
+        match(InQuIRParser::SEMICOLON);
+        break;
+      }
 
     default:
-      break;
+      throw NoViableAltException(this);
     }
    
   }
@@ -693,143 +576,513 @@ InQuIRParser::FunctionContext::FunctionContext(ParserRuleContext *parent, size_t
   : ParserRuleContext(parent, invokingState) {
 }
 
-InQuIRParser::SessionContext* InQuIRParser::FunctionContext::session() {
-  return getRuleContext<InQuIRParser::SessionContext>(0);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::EQUAL() {
-  return getToken(InQuIRParser::EQUAL, 0);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::OPEN() {
-  return getToken(InQuIRParser::OPEN, 0);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::LBRACK() {
-  return getToken(InQuIRParser::LBRACK, 0);
-}
-
-std::vector<InQuIRParser::ParticipantContext *> InQuIRParser::FunctionContext::participant() {
-  return getRuleContexts<InQuIRParser::ParticipantContext>();
-}
-
-InQuIRParser::ParticipantContext* InQuIRParser::FunctionContext::participant(size_t i) {
-  return getRuleContext<InQuIRParser::ParticipantContext>(i);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::RBRACK() {
-  return getToken(InQuIRParser::RBRACK, 0);
-}
-
-std::vector<tree::TerminalNode *> InQuIRParser::FunctionContext::COMMA() {
-  return getTokens(InQuIRParser::COMMA);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::COMMA(size_t i) {
-  return getToken(InQuIRParser::COMMA, i);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::CLOSE() {
-  return getToken(InQuIRParser::CLOSE, 0);
-}
-
-std::vector<InQuIRParser::ValueContext *> InQuIRParser::FunctionContext::value() {
-  return getRuleContexts<InQuIRParser::ValueContext>();
-}
-
-InQuIRParser::ValueContext* InQuIRParser::FunctionContext::value(size_t i) {
-  return getRuleContext<InQuIRParser::ValueContext>(i);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::INIT() {
-  return getToken(InQuIRParser::INIT, 0);
-}
-
-std::vector<tree::TerminalNode *> InQuIRParser::FunctionContext::LPAREN() {
-  return getTokens(InQuIRParser::LPAREN);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::LPAREN(size_t i) {
-  return getToken(InQuIRParser::LPAREN, i);
-}
-
-std::vector<tree::TerminalNode *> InQuIRParser::FunctionContext::RPAREN() {
-  return getTokens(InQuIRParser::RPAREN);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::RPAREN(size_t i) {
-  return getToken(InQuIRParser::RPAREN, i);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::FREE() {
-  return getToken(InQuIRParser::FREE, 0);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::MEASURE() {
-  return getToken(InQuIRParser::MEASURE, 0);
-}
-
-InQuIRParser::QubitContext* InQuIRParser::FunctionContext::qubit() {
-  return getRuleContext<InQuIRParser::QubitContext>(0);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::GENENT() {
-  return getToken(InQuIRParser::GENENT, 0);
-}
-
-InQuIRParser::LabelContext* InQuIRParser::FunctionContext::label() {
-  return getRuleContext<InQuIRParser::LabelContext>(0);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::ENTSWAP() {
-  return getToken(InQuIRParser::ENTSWAP, 0);
-}
-
-std::vector<InQuIRParser::ExpressionContext *> InQuIRParser::FunctionContext::expression() {
-  return getRuleContexts<InQuIRParser::ExpressionContext>();
-}
-
-InQuIRParser::ExpressionContext* InQuIRParser::FunctionContext::expression(size_t i) {
-  return getRuleContext<InQuIRParser::ExpressionContext>(i);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::RECV() {
-  return getToken(InQuIRParser::RECV, 0);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::COLON() {
-  return getToken(InQuIRParser::COLON, 0);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::SEND() {
-  return getToken(InQuIRParser::SEND, 0);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::RCXC() {
-  return getToken(InQuIRParser::RCXC, 0);
-}
-
-tree::TerminalNode* InQuIRParser::FunctionContext::RCXT() {
-  return getToken(InQuIRParser::RCXT, 0);
-}
-
 
 size_t InQuIRParser::FunctionContext::getRuleIndex() const {
   return InQuIRParser::RuleFunction;
 }
 
-void InQuIRParser::FunctionContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterFunction(this);
+void InQuIRParser::FunctionContext::copyFrom(FunctionContext *ctx) {
+  ParserRuleContext::copyFrom(ctx);
 }
 
-void InQuIRParser::FunctionContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitFunction(this);
+//----------------- RecvContext ------------------------------------------------------------------
+
+tree::TerminalNode* InQuIRParser::RecvContext::RECV() {
+  return getToken(InQuIRParser::RECV, 0);
 }
 
+tree::TerminalNode* InQuIRParser::RecvContext::LPAREN() {
+  return getToken(InQuIRParser::LPAREN, 0);
+}
+
+InQuIRParser::SessionContext* InQuIRParser::RecvContext::session() {
+  return getRuleContext<InQuIRParser::SessionContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::RecvContext::COMMA() {
+  return getToken(InQuIRParser::COMMA, 0);
+}
+
+InQuIRParser::LabelContext* InQuIRParser::RecvContext::label() {
+  return getRuleContext<InQuIRParser::LabelContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::RecvContext::COLON() {
+  return getToken(InQuIRParser::COLON, 0);
+}
+
+InQuIRParser::ValueContext* InQuIRParser::RecvContext::value() {
+  return getRuleContext<InQuIRParser::ValueContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::RecvContext::RPAREN() {
+  return getToken(InQuIRParser::RPAREN, 0);
+}
+
+InQuIRParser::RecvContext::RecvContext(FunctionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::RecvContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterRecv(this);
+}
+void InQuIRParser::RecvContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitRecv(this);
+}
+//----------------- GenEntContext ------------------------------------------------------------------
+
+InQuIRParser::ValueContext* InQuIRParser::GenEntContext::value() {
+  return getRuleContext<InQuIRParser::ValueContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::GenEntContext::EQUAL() {
+  return getToken(InQuIRParser::EQUAL, 0);
+}
+
+tree::TerminalNode* InQuIRParser::GenEntContext::GENENT() {
+  return getToken(InQuIRParser::GENENT, 0);
+}
+
+tree::TerminalNode* InQuIRParser::GenEntContext::LBRACK() {
+  return getToken(InQuIRParser::LBRACK, 0);
+}
+
+InQuIRParser::ParticipantContext* InQuIRParser::GenEntContext::participant() {
+  return getRuleContext<InQuIRParser::ParticipantContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::GenEntContext::RBRACK() {
+  return getToken(InQuIRParser::RBRACK, 0);
+}
+
+tree::TerminalNode* InQuIRParser::GenEntContext::LPAREN() {
+  return getToken(InQuIRParser::LPAREN, 0);
+}
+
+InQuIRParser::LabelContext* InQuIRParser::GenEntContext::label() {
+  return getRuleContext<InQuIRParser::LabelContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::GenEntContext::RPAREN() {
+  return getToken(InQuIRParser::RPAREN, 0);
+}
+
+InQuIRParser::GenEntContext::GenEntContext(FunctionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::GenEntContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterGenEnt(this);
+}
+void InQuIRParser::GenEntContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitGenEnt(this);
+}
+//----------------- InitContext ------------------------------------------------------------------
+
+InQuIRParser::ValueContext* InQuIRParser::InitContext::value() {
+  return getRuleContext<InQuIRParser::ValueContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::InitContext::EQUAL() {
+  return getToken(InQuIRParser::EQUAL, 0);
+}
+
+tree::TerminalNode* InQuIRParser::InitContext::INIT() {
+  return getToken(InQuIRParser::INIT, 0);
+}
+
+tree::TerminalNode* InQuIRParser::InitContext::LPAREN() {
+  return getToken(InQuIRParser::LPAREN, 0);
+}
+
+tree::TerminalNode* InQuIRParser::InitContext::RPAREN() {
+  return getToken(InQuIRParser::RPAREN, 0);
+}
+
+InQuIRParser::InitContext::InitContext(FunctionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::InitContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterInit(this);
+}
+void InQuIRParser::InitContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitInit(this);
+}
+//----------------- EntSwapContext ------------------------------------------------------------------
+
+std::vector<tree::TerminalNode *> InQuIRParser::EntSwapContext::LPAREN() {
+  return getTokens(InQuIRParser::LPAREN);
+}
+
+tree::TerminalNode* InQuIRParser::EntSwapContext::LPAREN(size_t i) {
+  return getToken(InQuIRParser::LPAREN, i);
+}
+
+std::vector<InQuIRParser::ValueContext *> InQuIRParser::EntSwapContext::value() {
+  return getRuleContexts<InQuIRParser::ValueContext>();
+}
+
+InQuIRParser::ValueContext* InQuIRParser::EntSwapContext::value(size_t i) {
+  return getRuleContext<InQuIRParser::ValueContext>(i);
+}
+
+std::vector<tree::TerminalNode *> InQuIRParser::EntSwapContext::COMMA() {
+  return getTokens(InQuIRParser::COMMA);
+}
+
+tree::TerminalNode* InQuIRParser::EntSwapContext::COMMA(size_t i) {
+  return getToken(InQuIRParser::COMMA, i);
+}
+
+std::vector<tree::TerminalNode *> InQuIRParser::EntSwapContext::RPAREN() {
+  return getTokens(InQuIRParser::RPAREN);
+}
+
+tree::TerminalNode* InQuIRParser::EntSwapContext::RPAREN(size_t i) {
+  return getToken(InQuIRParser::RPAREN, i);
+}
+
+tree::TerminalNode* InQuIRParser::EntSwapContext::EQUAL() {
+  return getToken(InQuIRParser::EQUAL, 0);
+}
+
+tree::TerminalNode* InQuIRParser::EntSwapContext::ENTSWAP() {
+  return getToken(InQuIRParser::ENTSWAP, 0);
+}
+
+std::vector<InQuIRParser::ExpressionContext *> InQuIRParser::EntSwapContext::expression() {
+  return getRuleContexts<InQuIRParser::ExpressionContext>();
+}
+
+InQuIRParser::ExpressionContext* InQuIRParser::EntSwapContext::expression(size_t i) {
+  return getRuleContext<InQuIRParser::ExpressionContext>(i);
+}
+
+InQuIRParser::EntSwapContext::EntSwapContext(FunctionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::EntSwapContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterEntSwap(this);
+}
+void InQuIRParser::EntSwapContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitEntSwap(this);
+}
+//----------------- MeasureContext ------------------------------------------------------------------
+
+InQuIRParser::ValueContext* InQuIRParser::MeasureContext::value() {
+  return getRuleContext<InQuIRParser::ValueContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::MeasureContext::EQUAL() {
+  return getToken(InQuIRParser::EQUAL, 0);
+}
+
+tree::TerminalNode* InQuIRParser::MeasureContext::MEASURE() {
+  return getToken(InQuIRParser::MEASURE, 0);
+}
+
+InQuIRParser::QubitContext* InQuIRParser::MeasureContext::qubit() {
+  return getRuleContext<InQuIRParser::QubitContext>(0);
+}
+
+InQuIRParser::MeasureContext::MeasureContext(FunctionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::MeasureContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterMeasure(this);
+}
+void InQuIRParser::MeasureContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitMeasure(this);
+}
+//----------------- CloseContext ------------------------------------------------------------------
+
+tree::TerminalNode* InQuIRParser::CloseContext::CLOSE() {
+  return getToken(InQuIRParser::CLOSE, 0);
+}
+
+InQuIRParser::SessionContext* InQuIRParser::CloseContext::session() {
+  return getRuleContext<InQuIRParser::SessionContext>(0);
+}
+
+InQuIRParser::CloseContext::CloseContext(FunctionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::CloseContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterClose(this);
+}
+void InQuIRParser::CloseContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitClose(this);
+}
+//----------------- RCXCContext ------------------------------------------------------------------
+
+tree::TerminalNode* InQuIRParser::RCXCContext::RCXC() {
+  return getToken(InQuIRParser::RCXC, 0);
+}
+
+tree::TerminalNode* InQuIRParser::RCXCContext::LBRACK() {
+  return getToken(InQuIRParser::LBRACK, 0);
+}
+
+InQuIRParser::ParticipantContext* InQuIRParser::RCXCContext::participant() {
+  return getRuleContext<InQuIRParser::ParticipantContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::RCXCContext::RBRACK() {
+  return getToken(InQuIRParser::RBRACK, 0);
+}
+
+tree::TerminalNode* InQuIRParser::RCXCContext::LPAREN() {
+  return getToken(InQuIRParser::LPAREN, 0);
+}
+
+InQuIRParser::SessionContext* InQuIRParser::RCXCContext::session() {
+  return getRuleContext<InQuIRParser::SessionContext>(0);
+}
+
+std::vector<tree::TerminalNode *> InQuIRParser::RCXCContext::COMMA() {
+  return getTokens(InQuIRParser::COMMA);
+}
+
+tree::TerminalNode* InQuIRParser::RCXCContext::COMMA(size_t i) {
+  return getToken(InQuIRParser::COMMA, i);
+}
+
+InQuIRParser::LabelContext* InQuIRParser::RCXCContext::label() {
+  return getRuleContext<InQuIRParser::LabelContext>(0);
+}
+
+std::vector<InQuIRParser::ExpressionContext *> InQuIRParser::RCXCContext::expression() {
+  return getRuleContexts<InQuIRParser::ExpressionContext>();
+}
+
+InQuIRParser::ExpressionContext* InQuIRParser::RCXCContext::expression(size_t i) {
+  return getRuleContext<InQuIRParser::ExpressionContext>(i);
+}
+
+tree::TerminalNode* InQuIRParser::RCXCContext::RPAREN() {
+  return getToken(InQuIRParser::RPAREN, 0);
+}
+
+InQuIRParser::RCXCContext::RCXCContext(FunctionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::RCXCContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterRCXC(this);
+}
+void InQuIRParser::RCXCContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitRCXC(this);
+}
+//----------------- RCXTContext ------------------------------------------------------------------
+
+tree::TerminalNode* InQuIRParser::RCXTContext::RCXT() {
+  return getToken(InQuIRParser::RCXT, 0);
+}
+
+tree::TerminalNode* InQuIRParser::RCXTContext::LBRACK() {
+  return getToken(InQuIRParser::LBRACK, 0);
+}
+
+InQuIRParser::ParticipantContext* InQuIRParser::RCXTContext::participant() {
+  return getRuleContext<InQuIRParser::ParticipantContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::RCXTContext::RBRACK() {
+  return getToken(InQuIRParser::RBRACK, 0);
+}
+
+tree::TerminalNode* InQuIRParser::RCXTContext::LPAREN() {
+  return getToken(InQuIRParser::LPAREN, 0);
+}
+
+InQuIRParser::SessionContext* InQuIRParser::RCXTContext::session() {
+  return getRuleContext<InQuIRParser::SessionContext>(0);
+}
+
+std::vector<tree::TerminalNode *> InQuIRParser::RCXTContext::COMMA() {
+  return getTokens(InQuIRParser::COMMA);
+}
+
+tree::TerminalNode* InQuIRParser::RCXTContext::COMMA(size_t i) {
+  return getToken(InQuIRParser::COMMA, i);
+}
+
+InQuIRParser::LabelContext* InQuIRParser::RCXTContext::label() {
+  return getRuleContext<InQuIRParser::LabelContext>(0);
+}
+
+std::vector<InQuIRParser::ExpressionContext *> InQuIRParser::RCXTContext::expression() {
+  return getRuleContexts<InQuIRParser::ExpressionContext>();
+}
+
+InQuIRParser::ExpressionContext* InQuIRParser::RCXTContext::expression(size_t i) {
+  return getRuleContext<InQuIRParser::ExpressionContext>(i);
+}
+
+tree::TerminalNode* InQuIRParser::RCXTContext::RPAREN() {
+  return getToken(InQuIRParser::RPAREN, 0);
+}
+
+InQuIRParser::RCXTContext::RCXTContext(FunctionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::RCXTContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterRCXT(this);
+}
+void InQuIRParser::RCXTContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitRCXT(this);
+}
+//----------------- FreeContext ------------------------------------------------------------------
+
+tree::TerminalNode* InQuIRParser::FreeContext::FREE() {
+  return getToken(InQuIRParser::FREE, 0);
+}
+
+InQuIRParser::ValueContext* InQuIRParser::FreeContext::value() {
+  return getRuleContext<InQuIRParser::ValueContext>(0);
+}
+
+InQuIRParser::FreeContext::FreeContext(FunctionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::FreeContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterFree(this);
+}
+void InQuIRParser::FreeContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitFree(this);
+}
+//----------------- OpenContext ------------------------------------------------------------------
+
+InQuIRParser::SessionContext* InQuIRParser::OpenContext::session() {
+  return getRuleContext<InQuIRParser::SessionContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::OpenContext::EQUAL() {
+  return getToken(InQuIRParser::EQUAL, 0);
+}
+
+tree::TerminalNode* InQuIRParser::OpenContext::OPEN() {
+  return getToken(InQuIRParser::OPEN, 0);
+}
+
+tree::TerminalNode* InQuIRParser::OpenContext::LBRACK() {
+  return getToken(InQuIRParser::LBRACK, 0);
+}
+
+std::vector<InQuIRParser::ParticipantContext *> InQuIRParser::OpenContext::participant() {
+  return getRuleContexts<InQuIRParser::ParticipantContext>();
+}
+
+InQuIRParser::ParticipantContext* InQuIRParser::OpenContext::participant(size_t i) {
+  return getRuleContext<InQuIRParser::ParticipantContext>(i);
+}
+
+tree::TerminalNode* InQuIRParser::OpenContext::RBRACK() {
+  return getToken(InQuIRParser::RBRACK, 0);
+}
+
+std::vector<tree::TerminalNode *> InQuIRParser::OpenContext::COMMA() {
+  return getTokens(InQuIRParser::COMMA);
+}
+
+tree::TerminalNode* InQuIRParser::OpenContext::COMMA(size_t i) {
+  return getToken(InQuIRParser::COMMA, i);
+}
+
+InQuIRParser::OpenContext::OpenContext(FunctionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::OpenContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterOpen(this);
+}
+void InQuIRParser::OpenContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitOpen(this);
+}
+//----------------- SendContext ------------------------------------------------------------------
+
+tree::TerminalNode* InQuIRParser::SendContext::SEND() {
+  return getToken(InQuIRParser::SEND, 0);
+}
+
+tree::TerminalNode* InQuIRParser::SendContext::LBRACK() {
+  return getToken(InQuIRParser::LBRACK, 0);
+}
+
+InQuIRParser::ParticipantContext* InQuIRParser::SendContext::participant() {
+  return getRuleContext<InQuIRParser::ParticipantContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::SendContext::RBRACK() {
+  return getToken(InQuIRParser::RBRACK, 0);
+}
+
+tree::TerminalNode* InQuIRParser::SendContext::LPAREN() {
+  return getToken(InQuIRParser::LPAREN, 0);
+}
+
+InQuIRParser::SessionContext* InQuIRParser::SendContext::session() {
+  return getRuleContext<InQuIRParser::SessionContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::SendContext::COMMA() {
+  return getToken(InQuIRParser::COMMA, 0);
+}
+
+InQuIRParser::LabelContext* InQuIRParser::SendContext::label() {
+  return getRuleContext<InQuIRParser::LabelContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::SendContext::COLON() {
+  return getToken(InQuIRParser::COLON, 0);
+}
+
+InQuIRParser::ValueContext* InQuIRParser::SendContext::value() {
+  return getRuleContext<InQuIRParser::ValueContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::SendContext::RPAREN() {
+  return getToken(InQuIRParser::RPAREN, 0);
+}
+
+InQuIRParser::SendContext::SendContext(FunctionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::SendContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterSend(this);
+}
+void InQuIRParser::SendContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitSend(this);
+}
 InQuIRParser::FunctionContext* InQuIRParser::function() {
   FunctionContext *_localctx = _tracker.createInstance<FunctionContext>(_ctx, getState());
   enterRule(_localctx, 8, InQuIRParser::RuleFunction);
@@ -843,243 +1096,254 @@ InQuIRParser::FunctionContext* InQuIRParser::function() {
     exitRule();
   });
   try {
-    setState(196);
+    setState(163);
     _errHandler->sync(this);
     switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 5, _ctx)) {
     case 1: {
+      _localctx = _tracker.createInstance<InQuIRParser::OpenContext>(_localctx);
       enterOuterAlt(_localctx, 1);
-      setState(95);
+      setState(62);
       session();
-      setState(96);
+      setState(63);
       match(InQuIRParser::EQUAL);
-      setState(97);
+      setState(64);
       match(InQuIRParser::OPEN);
-      setState(98);
+      setState(65);
       match(InQuIRParser::LBRACK);
-      setState(99);
+      setState(66);
       participant();
-      setState(104);
+      setState(71);
       _errHandler->sync(this);
       _la = _input->LA(1);
       while (_la == InQuIRParser::COMMA) {
-        setState(100);
+        setState(67);
         match(InQuIRParser::COMMA);
-        setState(101);
+        setState(68);
         participant();
-        setState(106);
+        setState(73);
         _errHandler->sync(this);
         _la = _input->LA(1);
       }
-      setState(107);
+      setState(74);
       match(InQuIRParser::RBRACK);
       break;
     }
 
     case 2: {
+      _localctx = _tracker.createInstance<InQuIRParser::CloseContext>(_localctx);
       enterOuterAlt(_localctx, 2);
-      setState(109);
+      setState(76);
       match(InQuIRParser::CLOSE);
 
-      setState(110);
+      setState(77);
       session();
       break;
     }
 
     case 3: {
+      _localctx = _tracker.createInstance<InQuIRParser::InitContext>(_localctx);
       enterOuterAlt(_localctx, 3);
-      setState(111);
+      setState(78);
       value();
-      setState(112);
+      setState(79);
       match(InQuIRParser::EQUAL);
-      setState(113);
+      setState(80);
       match(InQuIRParser::INIT);
-      setState(114);
+      setState(81);
       match(InQuIRParser::LPAREN);
-      setState(115);
+      setState(82);
       match(InQuIRParser::RPAREN);
       break;
     }
 
     case 4: {
+      _localctx = _tracker.createInstance<InQuIRParser::FreeContext>(_localctx);
       enterOuterAlt(_localctx, 4);
-      setState(117);
+      setState(84);
       match(InQuIRParser::FREE);
-      setState(118);
+      setState(85);
       value();
       break;
     }
 
     case 5: {
+      _localctx = _tracker.createInstance<InQuIRParser::MeasureContext>(_localctx);
       enterOuterAlt(_localctx, 5);
-      setState(119);
+      setState(86);
       value();
-      setState(120);
+      setState(87);
       match(InQuIRParser::EQUAL);
-      setState(121);
+      setState(88);
       match(InQuIRParser::MEASURE);
-      setState(122);
+      setState(89);
       qubit();
       break;
     }
 
     case 6: {
+      _localctx = _tracker.createInstance<InQuIRParser::GenEntContext>(_localctx);
       enterOuterAlt(_localctx, 6);
-      setState(124);
+      setState(91);
       value();
-      setState(125);
+      setState(92);
       match(InQuIRParser::EQUAL);
-      setState(126);
+      setState(93);
       match(InQuIRParser::GENENT);
-      setState(127);
+      setState(94);
       match(InQuIRParser::LBRACK);
-      setState(128);
+      setState(95);
       participant();
-      setState(129);
+      setState(96);
       match(InQuIRParser::RBRACK);
-      setState(130);
+      setState(97);
       match(InQuIRParser::LPAREN);
-      setState(131);
+      setState(98);
       label();
-      setState(132);
+      setState(99);
       match(InQuIRParser::RPAREN);
       break;
     }
 
     case 7: {
+      _localctx = _tracker.createInstance<InQuIRParser::EntSwapContext>(_localctx);
       enterOuterAlt(_localctx, 7);
-      setState(134);
+      setState(101);
       match(InQuIRParser::LPAREN);
-      setState(135);
+      setState(102);
       value();
-      setState(136);
+      setState(103);
       match(InQuIRParser::COMMA);
-      setState(137);
+      setState(104);
       value();
-      setState(138);
+      setState(105);
       match(InQuIRParser::RPAREN);
-      setState(139);
+      setState(106);
       match(InQuIRParser::EQUAL);
-      setState(140);
+      setState(107);
       match(InQuIRParser::ENTSWAP);
-      setState(141);
+      setState(108);
       match(InQuIRParser::LPAREN);
-      setState(142);
+      setState(109);
       expression(0);
-      setState(143);
+      setState(110);
       match(InQuIRParser::COMMA);
-      setState(144);
+      setState(111);
       expression(0);
-      setState(145);
+      setState(112);
       match(InQuIRParser::RPAREN);
       break;
     }
 
     case 8: {
+      _localctx = _tracker.createInstance<InQuIRParser::RecvContext>(_localctx);
       enterOuterAlt(_localctx, 8);
-      setState(147);
+      setState(114);
       match(InQuIRParser::RECV);
-      setState(148);
+      setState(115);
       match(InQuIRParser::LPAREN);
-      setState(149);
+      setState(116);
       session();
-      setState(150);
+      setState(117);
       match(InQuIRParser::COMMA);
-      setState(151);
+      setState(118);
       label();
-      setState(152);
+      setState(119);
       match(InQuIRParser::COLON);
-      setState(153);
+      setState(120);
       value();
-      setState(154);
+      setState(121);
       match(InQuIRParser::RPAREN);
       break;
     }
 
     case 9: {
+      _localctx = _tracker.createInstance<InQuIRParser::SendContext>(_localctx);
       enterOuterAlt(_localctx, 9);
-      setState(156);
+      setState(123);
       match(InQuIRParser::SEND);
-      setState(157);
+      setState(124);
       match(InQuIRParser::LBRACK);
-      setState(158);
+      setState(125);
       participant();
-      setState(159);
+      setState(126);
       match(InQuIRParser::RBRACK);
-      setState(160);
+      setState(127);
       match(InQuIRParser::LPAREN);
-      setState(161);
+      setState(128);
       session();
-      setState(162);
+      setState(129);
       match(InQuIRParser::COMMA);
-      setState(163);
+      setState(130);
       label();
-      setState(164);
+      setState(131);
       match(InQuIRParser::COLON);
-      setState(165);
+      setState(132);
       value();
-      setState(166);
+      setState(133);
       match(InQuIRParser::RPAREN);
       break;
     }
 
     case 10: {
+      _localctx = _tracker.createInstance<InQuIRParser::RCXCContext>(_localctx);
       enterOuterAlt(_localctx, 10);
-      setState(168);
+      setState(135);
       match(InQuIRParser::RCXC);
-      setState(169);
+      setState(136);
       match(InQuIRParser::LBRACK);
-      setState(170);
+      setState(137);
       participant();
-      setState(171);
+      setState(138);
       match(InQuIRParser::RBRACK);
-      setState(172);
+      setState(139);
       match(InQuIRParser::LPAREN);
-      setState(173);
+      setState(140);
       session();
-      setState(174);
+      setState(141);
       match(InQuIRParser::COMMA);
-      setState(175);
+      setState(142);
       label();
-      setState(176);
+      setState(143);
       match(InQuIRParser::COMMA);
-      setState(177);
+      setState(144);
       expression(0);
-      setState(178);
+      setState(145);
       match(InQuIRParser::COMMA);
-      setState(179);
+      setState(146);
       expression(0);
-      setState(180);
+      setState(147);
       match(InQuIRParser::RPAREN);
       break;
     }
 
     case 11: {
+      _localctx = _tracker.createInstance<InQuIRParser::RCXTContext>(_localctx);
       enterOuterAlt(_localctx, 11);
-      setState(182);
+      setState(149);
       match(InQuIRParser::RCXT);
-      setState(183);
+      setState(150);
       match(InQuIRParser::LBRACK);
-      setState(184);
+      setState(151);
       participant();
-      setState(185);
+      setState(152);
       match(InQuIRParser::RBRACK);
-      setState(186);
+      setState(153);
       match(InQuIRParser::LPAREN);
-      setState(187);
+      setState(154);
       session();
-      setState(188);
+      setState(155);
       match(InQuIRParser::COMMA);
-      setState(189);
+      setState(156);
       label();
-      setState(190);
+      setState(157);
       match(InQuIRParser::COMMA);
-      setState(191);
+      setState(158);
       expression(0);
-      setState(192);
+      setState(159);
       match(InQuIRParser::COMMA);
-      setState(193);
+      setState(160);
       expression(0);
-      setState(194);
+      setState(161);
       match(InQuIRParser::RPAREN);
       break;
     }
@@ -1104,47 +1368,79 @@ InQuIRParser::Quantum_instructionContext::Quantum_instructionContext(ParserRuleC
   : ParserRuleContext(parent, invokingState) {
 }
 
-InQuIRParser::GateContext* InQuIRParser::Quantum_instructionContext::gate() {
-  return getRuleContext<InQuIRParser::GateContext>(0);
-}
-
-std::vector<InQuIRParser::QubitContext *> InQuIRParser::Quantum_instructionContext::qubit() {
-  return getRuleContexts<InQuIRParser::QubitContext>();
-}
-
-InQuIRParser::QubitContext* InQuIRParser::Quantum_instructionContext::qubit(size_t i) {
-  return getRuleContext<InQuIRParser::QubitContext>(i);
-}
-
-tree::TerminalNode* InQuIRParser::Quantum_instructionContext::LBRACK() {
-  return getToken(InQuIRParser::LBRACK, 0);
-}
-
-InQuIRParser::ValueContext* InQuIRParser::Quantum_instructionContext::value() {
-  return getRuleContext<InQuIRParser::ValueContext>(0);
-}
-
-tree::TerminalNode* InQuIRParser::Quantum_instructionContext::RBRACK() {
-  return getToken(InQuIRParser::RBRACK, 0);
-}
-
 
 size_t InQuIRParser::Quantum_instructionContext::getRuleIndex() const {
   return InQuIRParser::RuleQuantum_instruction;
 }
 
-void InQuIRParser::Quantum_instructionContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterQuantum_instruction(this);
+void InQuIRParser::Quantum_instructionContext::copyFrom(Quantum_instructionContext *ctx) {
+  ParserRuleContext::copyFrom(ctx);
 }
 
-void InQuIRParser::Quantum_instructionContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitQuantum_instruction(this);
+//----------------- ConditionalGateContext ------------------------------------------------------------------
+
+InQuIRParser::GateContext* InQuIRParser::ConditionalGateContext::gate() {
+  return getRuleContext<InQuIRParser::GateContext>(0);
 }
 
+tree::TerminalNode* InQuIRParser::ConditionalGateContext::LBRACK() {
+  return getToken(InQuIRParser::LBRACK, 0);
+}
+
+InQuIRParser::ValueContext* InQuIRParser::ConditionalGateContext::value() {
+  return getRuleContext<InQuIRParser::ValueContext>(0);
+}
+
+tree::TerminalNode* InQuIRParser::ConditionalGateContext::RBRACK() {
+  return getToken(InQuIRParser::RBRACK, 0);
+}
+
+std::vector<InQuIRParser::QubitContext *> InQuIRParser::ConditionalGateContext::qubit() {
+  return getRuleContexts<InQuIRParser::QubitContext>();
+}
+
+InQuIRParser::QubitContext* InQuIRParser::ConditionalGateContext::qubit(size_t i) {
+  return getRuleContext<InQuIRParser::QubitContext>(i);
+}
+
+InQuIRParser::ConditionalGateContext::ConditionalGateContext(Quantum_instructionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::ConditionalGateContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterConditionalGate(this);
+}
+void InQuIRParser::ConditionalGateContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitConditionalGate(this);
+}
+//----------------- UsualGateContext ------------------------------------------------------------------
+
+InQuIRParser::GateContext* InQuIRParser::UsualGateContext::gate() {
+  return getRuleContext<InQuIRParser::GateContext>(0);
+}
+
+std::vector<InQuIRParser::QubitContext *> InQuIRParser::UsualGateContext::qubit() {
+  return getRuleContexts<InQuIRParser::QubitContext>();
+}
+
+InQuIRParser::QubitContext* InQuIRParser::UsualGateContext::qubit(size_t i) {
+  return getRuleContext<InQuIRParser::QubitContext>(i);
+}
+
+InQuIRParser::UsualGateContext::UsualGateContext(Quantum_instructionContext *ctx) { copyFrom(ctx); }
+
+void InQuIRParser::UsualGateContext::enterRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->enterUsualGate(this);
+}
+void InQuIRParser::UsualGateContext::exitRule(tree::ParseTreeListener *listener) {
+  auto parserListener = dynamic_cast<InQuIRParserListener *>(listener);
+  if (parserListener != nullptr)
+    parserListener->exitUsualGate(this);
+}
 InQuIRParser::Quantum_instructionContext* InQuIRParser::quantum_instruction() {
   Quantum_instructionContext *_localctx = _tracker.createInstance<Quantum_instructionContext>(_ctx, getState());
   enterRule(_localctx, 10, InQuIRParser::RuleQuantum_instruction);
@@ -1158,22 +1454,23 @@ InQuIRParser::Quantum_instructionContext* InQuIRParser::quantum_instruction() {
     exitRule();
   });
   try {
-    setState(217);
+    setState(184);
     _errHandler->sync(this);
     switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 8, _ctx)) {
     case 1: {
+      _localctx = _tracker.createInstance<InQuIRParser::UsualGateContext>(_localctx);
       enterOuterAlt(_localctx, 1);
-      setState(198);
+      setState(165);
       gate();
-      setState(199);
+      setState(166);
       qubit();
-      setState(203);
+      setState(170);
       _errHandler->sync(this);
       _la = _input->LA(1);
       while (_la == InQuIRParser::ID) {
-        setState(200);
+        setState(167);
         qubit();
-        setState(205);
+        setState(172);
         _errHandler->sync(this);
         _la = _input->LA(1);
       }
@@ -1181,24 +1478,25 @@ InQuIRParser::Quantum_instructionContext* InQuIRParser::quantum_instruction() {
     }
 
     case 2: {
+      _localctx = _tracker.createInstance<InQuIRParser::ConditionalGateContext>(_localctx);
       enterOuterAlt(_localctx, 2);
-      setState(206);
+      setState(173);
       gate();
-      setState(207);
+      setState(174);
       match(InQuIRParser::LBRACK);
-      setState(208);
+      setState(175);
       value();
-      setState(209);
+      setState(176);
       match(InQuIRParser::RBRACK);
-      setState(210);
+      setState(177);
       qubit();
-      setState(214);
+      setState(181);
       _errHandler->sync(this);
       _la = _input->LA(1);
       while (_la == InQuIRParser::ID) {
-        setState(211);
+        setState(178);
         qubit();
-        setState(216);
+        setState(183);
         _errHandler->sync(this);
         _la = _input->LA(1);
       }
@@ -1300,22 +1598,22 @@ InQuIRParser::ExpressionContext* InQuIRParser::expression(int precedence) {
   try {
     size_t alt;
     enterOuterAlt(_localctx, 1);
-    setState(225);
+    setState(192);
     _errHandler->sync(this);
     switch (_input->LA(1)) {
       case InQuIRParser::ID:
       case InQuIRParser::INT: {
-        setState(220);
+        setState(187);
         value();
         break;
       }
 
       case InQuIRParser::LPAREN: {
-        setState(221);
+        setState(188);
         match(InQuIRParser::LPAREN);
-        setState(222);
+        setState(189);
         expression(0);
-        setState(223);
+        setState(190);
         match(InQuIRParser::RPAREN);
         break;
       }
@@ -1324,7 +1622,7 @@ InQuIRParser::ExpressionContext* InQuIRParser::expression(int precedence) {
       throw NoViableAltException(this);
     }
     _ctx->stop = _input->LT(-1);
-    setState(238);
+    setState(205);
     _errHandler->sync(this);
     alt = getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 11, _ctx);
     while (alt != 2 && alt != atn::ATN::INVALID_ALT_NUMBER) {
@@ -1332,18 +1630,18 @@ InQuIRParser::ExpressionContext* InQuIRParser::expression(int precedence) {
         if (!_parseListeners.empty())
           triggerExitRuleEvent();
         previousContext = _localctx;
-        setState(236);
+        setState(203);
         _errHandler->sync(this);
         switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 10, _ctx)) {
         case 1: {
           _localctx = _tracker.createInstance<ExpressionContext>(parentContext, parentState);
           pushNewRecursionContext(_localctx, startState, RuleExpression);
-          setState(227);
+          setState(194);
 
           if (!(precpred(_ctx, 4))) throw FailedPredicateException(this, "precpred(_ctx, 4)");
-          setState(228);
+          setState(195);
           match(InQuIRParser::AND);
-          setState(229);
+          setState(196);
           expression(5);
           break;
         }
@@ -1351,12 +1649,12 @@ InQuIRParser::ExpressionContext* InQuIRParser::expression(int precedence) {
         case 2: {
           _localctx = _tracker.createInstance<ExpressionContext>(parentContext, parentState);
           pushNewRecursionContext(_localctx, startState, RuleExpression);
-          setState(230);
+          setState(197);
 
           if (!(precpred(_ctx, 3))) throw FailedPredicateException(this, "precpred(_ctx, 3)");
-          setState(231);
+          setState(198);
           match(InQuIRParser::OR);
-          setState(232);
+          setState(199);
           expression(4);
           break;
         }
@@ -1364,12 +1662,12 @@ InQuIRParser::ExpressionContext* InQuIRParser::expression(int precedence) {
         case 3: {
           _localctx = _tracker.createInstance<ExpressionContext>(parentContext, parentState);
           pushNewRecursionContext(_localctx, startState, RuleExpression);
-          setState(233);
+          setState(200);
 
           if (!(precpred(_ctx, 2))) throw FailedPredicateException(this, "precpred(_ctx, 2)");
-          setState(234);
+          setState(201);
           match(InQuIRParser::XOR);
-          setState(235);
+          setState(202);
           expression(3);
           break;
         }
@@ -1378,7 +1676,7 @@ InQuIRParser::ExpressionContext* InQuIRParser::expression(int precedence) {
           break;
         } 
       }
-      setState(240);
+      setState(207);
       _errHandler->sync(this);
       alt = getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 11, _ctx);
     }
@@ -1438,26 +1736,26 @@ InQuIRParser::ValueContext* InQuIRParser::value() {
     exitRule();
   });
   try {
-    setState(244);
+    setState(211);
     _errHandler->sync(this);
     switch (getInterpreter<atn::ParserATNSimulator>()->adaptivePredict(_input, 12, _ctx)) {
     case 1: {
       enterOuterAlt(_localctx, 1);
-      setState(241);
+      setState(208);
       qubit();
       break;
     }
 
     case 2: {
       enterOuterAlt(_localctx, 2);
-      setState(242);
+      setState(209);
       match(InQuIRParser::INT);
       break;
     }
 
     case 3: {
       enterOuterAlt(_localctx, 3);
-      setState(243);
+      setState(210);
       match(InQuIRParser::ID);
       break;
     }
@@ -1541,7 +1839,7 @@ InQuIRParser::GateContext* InQuIRParser::gate() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(246);
+    setState(213);
     _la = _input->LA(1);
     if (!((((_la & ~ 0x3fULL) == 0) &&
       ((1ULL << _la) & 520192) != 0))) {
@@ -1602,7 +1900,7 @@ InQuIRParser::SessionContext* InQuIRParser::session() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(248);
+    setState(215);
     match(InQuIRParser::ID);
    
   }
@@ -1655,7 +1953,7 @@ InQuIRParser::ParticipantContext* InQuIRParser::participant() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(250);
+    setState(217);
     match(InQuIRParser::INT);
    
   }
@@ -1708,7 +2006,7 @@ InQuIRParser::LabelContext* InQuIRParser::label() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(252);
+    setState(219);
     match(InQuIRParser::ID);
    
   }
@@ -1761,7 +2059,7 @@ InQuIRParser::QubitContext* InQuIRParser::qubit() {
   });
   try {
     enterOuterAlt(_localctx, 1);
-    setState(254);
+    setState(221);
     match(InQuIRParser::ID);
    
   }
