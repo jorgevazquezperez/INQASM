@@ -1,5 +1,6 @@
 #include "InQuIRParserBaseListener.h"
 #include <vector>
+#include <fstream>
 
 
 class InQuIRtoNetQASMListener : public InQuIRParserBaseListener {
@@ -8,9 +9,9 @@ class InQuIRtoNetQASMListener : public InQuIRParserBaseListener {
     int current_file_num;
     
     // Check if it is a good practice
-    int array_counter;
-    int qubit_counter;
-    int classical_counter;
+    std::string array_counter;
+    std::string qubit_counter;
+    std::string classical_counter;
 
 
 public:
@@ -21,4 +22,7 @@ public:
 
     void enterProcess(InQuIRParser::ProcessContext * ctx) override;
     void exitProcess(InQuIRParser::ProcessContext * ctx) override;
+    
+    void exitInit(InQuIRParser::InitContext * ctx) override;
+    void exitGenEnt(InQuIRParser::GenEntContext * ctx) override;
 };
