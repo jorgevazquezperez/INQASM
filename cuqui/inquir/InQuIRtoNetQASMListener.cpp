@@ -22,7 +22,7 @@ void InQuIRtoNetQASMListener::enterProcess(InQuIRParser::ProcessContext * ctx) {
 }
 
 void exitInit(InQuIRParser::InitContext * ctx){
-
+    
 }
 
 
