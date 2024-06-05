@@ -21,6 +21,4 @@ public:
 
     void enterProcess(InQuIRParser::ProcessContext * ctx) override;
     void exitProcess(InQuIRParser::ProcessContext * ctx) override;
-
-    void exitInstruction(InQuIRParser::InstructionContext * ctx) override;
 };
