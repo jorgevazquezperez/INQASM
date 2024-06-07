@@ -2,6 +2,7 @@
 
 InQuIRtoNetQASMListener::InQuIRtoNetQASMListener() {
     current_file = "";
+    current_file_info = "---\n";
     current_file_num = 0;
 
     array_counter = "0";
@@ -32,21 +33,25 @@ void InQuIRtoNetQASMListener::closeFile(bool finish_process) {
         current_file += "ret_arr @" + std::to_string(i) + "\n";
     }
 
-    std::string filename; 
-    std::cout << branches_counter << std::endl;
+    std::string nqasm_name, info_name;
     if(stoi(branches_counter) > 0){
-        filename = "process_" + std::to_string(current_file_num) + "_" + branches_counter + ".nqasm";
+        nqasm_name = "process_" + std::to_string(current_file_num) + "_" + branches_counter + ".nqasm";
+        info_name = "process_" + std::to_string(current_file_num) + "_" + branches_counter + ".yaml";
     } else {
-        filename = "process_" + std::to_string(current_file_num) + ".nqasm";
+        nqasm_name = "process_" + std::to_string(current_file_num) + ".nqasm";
     }
     
-    std::ofstream outFile(filename);
+    std::ofstream out_file(nqasm_name);
+    if (out_file.is_open()) {
+        out_file << current_file;
+        out_file.close();
 
-    if (outFile.is_open()) {
-        outFile << current_file;
-        outFile.close();
+        if(stoi(branches_counter) > 0) {
+            std::ofstream info_file(info_name);
+            info_file << current_file_info;
+        }
 
-        netqasm_files.push_back(filename);
+        netqasm_files.push_back(nqasm_name);
         current_file = "";
         array_counter = "0";
         qubit_counter = "0";
@@ -140,8 +145,6 @@ void InQuIRtoNetQASMListener::exitMeasure(InQuIRParser::MeasureContext * ctx) {
     current_file += "meas Q" + std::to_string(qubits[qubit]) + " " + clbit + "\n";
     current_file += "qfree Q" + std::to_string(qubits[qubit]) + "\n";
 
-    current_file += "array 1 @"  + array_counter + "\n";
-    current_file += "store " + clbit + " @" + array_counter + "[0]\n";
 
     augmentCounter(clbit_counter);
     augmentCounter(array_counter);
@@ -157,4 +160,18 @@ void InQuIRtoNetQASMListener::exitConditionalGate(InQuIRParser::ConditionalGateC
     auto qubit = "Q" + qubit_counter;
     current_file += "set " + qubit + " " + qubit_counter + "\n";
     applyQuantumGate(ctx->gate(), ctx->qubit());
+}
+
+void InQuIRtoNetQASMListener::exitSend(InQuIRParser::SendContext * ctx) {
+    // TODO: Improve to be able to send multiple clbits (?) 
+    auto clbit = clbits[ctx->value()->getText()];
+
+    current_file += "array 1 @"  + array_counter + "\n";
+    current_file += "store M" + std::to_string(clbit) + " @" + array_counter + "[0]\n";
+
+    current_file_info += "send:\n";
+    current_file_info += "\tprocess: " + ctx->participant()->getText() + "\n";
+    current_file_info += "\tarray:\n";
+    current_file_info += "\t\tname: " + array_counter + "\n";
+    current_file_info += "\t\tposition: 0\n";
 }

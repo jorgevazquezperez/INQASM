@@ -9,6 +9,7 @@ class InQuIRtoNetQASMListener : public InQuIRParserBaseListener {
 private:
     std::vector<std::string> netqasm_files;
     std::string current_file;
+    std::string current_file_info;
     int current_file_num;
     
     std::unordered_map<std::string, int> qubits;
@@ -45,5 +46,5 @@ public:
 
     void exitMeasure(InQuIRParser::MeasureContext * ctx) override;
 
-
+    void exitSend(InQuIRParser::SendContext * ctx) override; 
 };
