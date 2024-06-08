@@ -1,4 +1,4 @@
-# InQuIR Compiler
+# Compiler for Universal Quantum Interconnections (CUQUI)
 
 In this work we are going to develop a compiler for InQuIR to NetQASM. The [InQuIR language](https://arxiv.org/abs/2302.00267) is presented to create a intermediate representation for distributed quantum computing (DQC). In this work is employed as reference, although some changes might be introduced to adjust the theoretical work to an actual implementation. Moreover, the [NetQASM language](https://iopscience.iop.org/article/10.1088/2058-9565/ac753f) is the language chosen to compile (although we should almost say *traspile*, in the classical sense) to because it is intended to be a lower level than the InQuIR. 
 
