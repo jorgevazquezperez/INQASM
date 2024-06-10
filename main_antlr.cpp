@@ -3,16 +3,16 @@
 #include "InQuIRCompiler.hpp"
 
 const char * inquir_example = R"""(
-    0 {
-    world = open[0,1,2,3,4,5,6,7];
-    q0 = init();
-    _cq0 = genEnt[1](l0);
-    CX q0 _cq0;
-    _m0 = measure _cq0;
-    free _cq0;
-    send[1](world, l1:_m0);
-    recv(world, l1_2:_m1);
-    Z[_m1] q0;
+  0 {
+  world = open[0,1,2,3,4,5,6,7];
+  q0 = init();
+  _cq0 = genEnt[1](l0);
+  CX q0 _cq0;
+  _m0 = measure _cq0;
+  free _cq0;
+  send[1](world, l1:_m0);
+  recv(world, l1_2:_m1);
+  Z[_m1] q0;
 }
 1 {
   world = open[0,1,2,3,4,5,6,7];

@@ -64,7 +64,6 @@ def main(app_config=None, phi=0.0, theta=0.0):
 
     with target:
         proto1 = parse_text_subroutine(subroutine_1)
-        print(proto1)
         target.commit_subroutine(proto1)
 
         # let back-end execute the quantum operations above

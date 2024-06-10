@@ -8,9 +8,10 @@
 class InQuIRtoNetQASMListener : public InQuIRParserBaseListener {
 private:
     std::vector<std::string> netqasm_files;
-    std::string current_file;
+    std::string current_file1;
+    std::string current_file2;
     std::string current_file_info;
-    int current_file_num;
+    std::string current_process_num;
     
     std::unordered_map<std::string, int> qubits;
     std::unordered_map<std::string, int> clbits;
