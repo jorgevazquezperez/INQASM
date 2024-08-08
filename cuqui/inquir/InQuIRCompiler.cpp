@@ -5,6 +5,7 @@
 using namespace antlr4;
 
 void compile(const std::string &src) {
+    
     ANTLRInputStream input(src);
     InQuIRLexer lexer(&input);
     CommonTokenStream tokens(&lexer);
