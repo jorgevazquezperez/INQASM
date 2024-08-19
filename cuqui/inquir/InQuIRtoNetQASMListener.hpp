@@ -1,5 +1,9 @@
 #include <vector>
 #include <fstream>
+#include <bits/stdc++.h>
+#include <iostream>
+#include <sys/stat.h>
+#include <sys/types.h>
 
 #include "InQuIRParserBaseListener.h"
 #include "InQuIRParser.h"

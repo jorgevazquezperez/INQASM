@@ -10,7 +10,7 @@ mainprogram
 
 system
     : process* EOF
-    | LPAREN system VERT system RPAREN EOF
+    | LPAREN system (VERT system)+ RPAREN EOF
     ;
 
 process 
@@ -28,7 +28,7 @@ line
 
 function
     : session EQUAL OPEN LBRACK participant (COMMA participant)* RBRACK                 #Open
-    | CLOSE (session)                                                                   #Close
+    | CLOSE LPAREN session RPAREN                                                       #Close
     | value EQUAL INIT LPAREN RPAREN                                                    #Init
     | FREE value                                                                        #Free
     | value EQUAL MEASURE qubit                                                         #Measure

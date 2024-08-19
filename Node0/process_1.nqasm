@@ -1,0 +1,6 @@
+# NETQASM 1.0
+# APPID 0
+set Q0 0
+z Q0 
+# NETQASM 1.0
+# APPID 0

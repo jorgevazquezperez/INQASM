@@ -1,0 +1,6 @@
+---
+send:
+	process: 1
+	array:
+		name: 3
+		position: 0
