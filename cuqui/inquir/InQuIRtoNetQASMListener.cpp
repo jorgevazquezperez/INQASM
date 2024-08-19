@@ -9,7 +9,9 @@ InQuIRtoNetQASMListener::InQuIRtoNetQASMListener() {
     array_counter = "0";
     qubit_counter = "0";
     clbit_counter = "0";
-    branches_counter = "0";
+    file_counter = "0";
+    
+    branched = false;
 }
 
 const std::unordered_map<std::string, std::string> InQuIRtoNetQASMListener::gate_equivalences = {
@@ -34,38 +36,41 @@ void InQuIRtoNetQASMListener::closeFile(bool finish_process) {
         auto new_line = "ret_arr @" + std::to_string(i) + "\n";
         
         current_file1 += new_line;
-        current_file2 += (stoi(branches_counter) > 0 ?  new_line : "");
+        current_file2 += branched ? new_line : "";
     }
     
     std::string nqasm_name1, nqasm_name2, info_name;
     auto node = "Node" + current_process_num;
-    if(stoi(branches_counter) > 0){
-        std::string proc_1 = std::to_string(stoi(branches_counter)*2-1);
-        std::string proc_2 = std::to_string(stoi(branches_counter)*2);
-        mkdir(node.c_str(), 0777);
-        std::cout << "Closing file of process: " << proc_1 << std::endl;
-        std::cout << "Closing file of process: " << proc_2 << std::endl;
-        nqasm_name1 = node + "/process_" + proc_1 + ".nqasm";
-        nqasm_name2 = node + "/process_" + proc_2 + ".nqasm";
-        info_name = node + "/process_" + proc_1 + proc_2 + ".yaml";
+    mkdir(node.c_str(), 0777);
+    if(branched){
+        nqasm_name1 = node + "/file_" + file_counter + "A.nqasm";
+        nqasm_name2 = node + "/file_" + file_counter + "B.nqasm";
+        info_name = node + "/file_info" + file_counter + ".yaml";
     } else {
-        nqasm_name1 = node + "/process_" + current_process_num + ".nqasm";
+        nqasm_name1 = node + "/file_" + file_counter + ".nqasm";
     }
     
     std::ofstream out_file1(nqasm_name1);
     if (out_file1.is_open()) {
-        std::cout << "Closing file with contnt: \n\n " << current_file1 << "\n";
         out_file1 << current_file1;
         out_file1.close();
 
-        if(stoi(branches_counter) > 0) {
+        if(branched) {
             std::ofstream out_file2(nqasm_name2);
-            out_file2.close();
-            out_file2.open(nqasm_name1, std::ios::app);
-            out_file2 << current_file2;
+            if (out_file2.is_open()) {
+                out_file2 << current_file2;
+                out_file2.close();
+            } else {
+                std::cerr << "Error abriendo." << std::endl;
+            }
 
             std::ofstream info_file(info_name);
-            info_file << current_file_info;
+            if (info_file.is_open()) {
+                info_file << current_file_info;
+                info_file.close();
+            } else {
+                std::cerr << "Error abriendo." << std::endl;
+            }
         }
 
         netqasm_files.push_back(nqasm_name1);
@@ -76,7 +81,7 @@ void InQuIRtoNetQASMListener::closeFile(bool finish_process) {
         qubit_counter = "0";
         clbit_counter = "0";
         if(finish_process){
-            branches_counter = "0";
+            branched = false;
         }
     } else {
         std::cerr << "Error opening file for writing." << std::endl;
@@ -88,18 +93,18 @@ void InQuIRtoNetQASMListener::applyQuantumGate(InQuIRParser::GateContext *gate, 
 
     auto new_line = gate_equivalences.at(gate_name) + " " ;
     current_file1 += new_line;
-    current_file2 += (stoi(branches_counter) == 0 ?  new_line : "");
+    current_file2 += (not branched ?  new_line : "");
 
     for(auto qubit: gate_qubits){
         new_line = "Q" + std::to_string(qubits[qubit->getText()]) + " ";
         current_file1 += new_line;
-        current_file2 += (stoi(branches_counter) == 0 ?  new_line : "");
+        current_file2 += (not branched ?  new_line : "");
     }
     current_file1 += "\n";
-    current_file2 += (stoi(branches_counter) == 0 ?  "\n" : "");
+    current_file2 += (not branched ?  "\n" : "");
 
     if (gate_name == "X"){
-        std::cout << branches_counter << std::endl;
+        std::cout << file_counter << std::endl;
         std::cout << "Primer archivo después de la puerta: \n" << current_file1 << "\n";
         std::cout << "Segundo archivo después de la puerta: \n" << current_file2 << "\n";
     }
@@ -120,7 +125,7 @@ void InQuIRtoNetQASMListener::enterProcess(InQuIRParser::ProcessContext * ctx) {
     // std::cout << "Array counter" << array_counter << "\n";
     // std::cout << "Qubit counter" << qubit_counter << "\n";
     // std::cout << "Clbit counter" << clbit_counter << "\n";
-    // std::cout << "Branches counter" << branches_counter << "\n"; 
+    // std::cout << "Branches counter" << file_counter << "\n"; 
     current_file1 += "# NETQASM 1.0\n";
     current_file1 += "# APPID 0\n";
 }
@@ -135,15 +140,15 @@ void InQuIRtoNetQASMListener::exitInit(InQuIRParser::InitContext * ctx) {
 
     auto new_line = "set " + qubit + " " + qubit_counter + "\n";
     current_file1 += new_line;
-    current_file2 += (stoi(branches_counter) > 0 ?  new_line : "");
+    current_file2 += (branched ?  new_line : "");
 
     new_line = "qalloc " + qubit + "\n";
     current_file1 += new_line;
-    current_file2 += (stoi(branches_counter) > 0 ?  new_line : "");
+    current_file2 += (branched ?  new_line : "");
 
     new_line = "init " + qubit + "\n";
     current_file1 += new_line;
-    current_file2 += (stoi(branches_counter) > 0 ?  new_line : "");
+    current_file2 += (branched ?  new_line : "");
 
     qubits[ctx->value()->getText()] = stoi(qubit_counter);
     augmentCounter(qubit_counter);
@@ -210,18 +215,19 @@ void InQuIRtoNetQASMListener::exitMeasure(InQuIRParser::MeasureContext * ctx) {
 
     auto new_line = "meas Q" + std::to_string(qubits[qubit]) + " " + clbit + "\n";
     current_file1 += new_line;
-    current_file2 += (stoi(branches_counter) > 0 ?  new_line : "");
+    current_file2 += (branched ?  new_line : "");
 
     new_line = "qfree Q" + std::to_string(qubits[qubit]) + "\n";
     current_file1 += new_line;
-    current_file2 += (stoi(branches_counter) > 0 ?  new_line : "");
+    current_file2 += (branched ?  new_line : "");
 
     augmentCounter(clbit_counter);
 }
 
 void InQuIRtoNetQASMListener::enterConditionalGate(InQuIRParser::ConditionalGateContext * ctx) {
     closeFile(false);
-    augmentCounter(branches_counter);
+    augmentCounter(file_counter);
+    branched = true;
 
     current_file1 += "# NETQASM 1.0\n";
     current_file1 += "# APPID 0\n";
@@ -243,11 +249,11 @@ void InQuIRtoNetQASMListener::exitSend(InQuIRParser::SendContext * ctx) {
 
     auto new_line = "array 1 @"  + array_counter + "\n";
     current_file1 += new_line;
-    current_file2 += (stoi(branches_counter) > 0 ?  new_line : "");
+    current_file2 += (branched ?  new_line : "");
 
     new_line = "store M" + std::to_string(clbit) + " @" + array_counter + "[0]\n";
     current_file1 += new_line;
-    current_file2 += (stoi(branches_counter) > 0 ?  new_line : "");
+    current_file2 += (branched ?  new_line : "");
 
     current_file_info += "send:\n";
     current_file_info += "\tprocess: " + ctx->participant()->getText() + "\n";

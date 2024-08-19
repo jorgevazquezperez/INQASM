@@ -24,7 +24,9 @@ private:
     std::string array_counter;
     std::string qubit_counter;
     std::string clbit_counter;
-    std::string branches_counter;
+    std::string file_counter;
+
+    bool branched;
 
     static const std::unordered_map<std::string, std::string> gate_equivalences;
     static void augmentCounter(std::string &counter);
