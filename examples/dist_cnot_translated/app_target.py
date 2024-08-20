@@ -10,7 +10,7 @@ import yaml
 
 def main(app_config=None, phi=0.0, theta=0.0):
 
-    folder_path = './nqasm_files/target'
+    folder_path = '/home/jorgevazquez/Documents/CUQUI/build'
     file_list = sorted(os.listdir(folder_path), key=lambda x: os.path.splitext(x)[0])
 
     yaml_files = [file for file in file_list if file.endswith(".yaml")]

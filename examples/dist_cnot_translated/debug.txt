@@ -1,0 +1,975 @@
+DEBUG:NetQASM:Starting netsquid backend
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+INFO:NetQASM:
+-------------
+Starting NetSquid simulator
+-------------
+
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.ThreadSocket('controller', 'target', 0):Setting up connection
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.ThreadSocket('target', 'controller', 0):Setting up connection
+DEBUG:NetQASM._SocketHub:Connection for socket ('controller', 'target', 0) failed, trying again in 0.1 s...
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM._SocketHub:Connection for socket ('target', 'controller', 0) successful
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.NetSquidConnection(target):Committing message InitNewAppMessage(app_id=0, max_qubits=5)
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+INFO:NetQASM.SubroutineHandler(target):Handle message InitNewAppMessage(app_id=0, max_qubits=5)
+DEBUG:NetQASM.SubroutineHandler(target):Allocating a new unit module of size 5 for application with app ID 0.
+
+DEBUG:NetQASM.SubroutineHandler(target):Marking message InitNewAppMessage(app_id=0, max_qubits=5) as done
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.NetSquidConnection(target):Committing message OpenEPRSocketMessage(app_id=0, epr_socket_id=0, remote_node_id=1, remote_epr_socket_id=0, min_fidelity=100)
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM._SocketHub:Connection for socket ('controller', 'target', 0) successful
+INFO:NetQASM.SubroutineHandler(target):Handle message OpenEPRSocketMessage(app_id=0, epr_socket_id=0, remote_node_id=1, remote_epr_socket_id=0, min_fidelity=100)
+DEBUG:NetQASM.NetSquidConnection(controller):Committing message InitNewAppMessage(app_id=0, max_qubits=5)
+DEBUG:NetQASM.SubroutineHandler(target):Adding to other tasks
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+INFO:NetQASM.SubroutineHandler(controller):Handle message InitNewAppMessage(app_id=0, max_qubits=5)
+DEBUG:NetQASM.SubroutineHandler(controller):Allocating a new unit module of size 5 for application with app ID 0.
+
+DEBUG:NetQASM.SubroutineHandler(controller):Marking message InitNewAppMessage(app_id=0, max_qubits=5) as done
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.NetSquidConnection(controller):Committing message OpenEPRSocketMessage(app_id=0, epr_socket_id=0, remote_node_id=0, remote_epr_socket_id=0, min_fidelity=100)
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+INFO:NetQASM.SubroutineHandler(controller):Handle message OpenEPRSocketMessage(app_id=0, epr_socket_id=0, remote_node_id=0, remote_epr_socket_id=0, min_fidelity=100)
+DEBUG:NetQASM.SubroutineHandler(controller):Adding to other tasks
+DEBUG:NetQASM.SubroutineHandler(controller):Executing other task
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Executing other task
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):Marking message OpenEPRSocketMessage(app_id=0, epr_socket_id=0, remote_node_id=0, remote_epr_socket_id=0, min_fidelity=100) as done
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):Marking message OpenEPRSocketMessage(app_id=0, epr_socket_id=0, remote_node_id=1, remote_epr_socket_id=0, min_fidelity=100) as done
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+DEBUG:NetQASM.SubroutineHandler(target):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):No more events so wait for next message
+DEBUG:NetQASM.NetSquidConnection(controller):Commiting compiled subroutine:
+Subroutine
+NetQASM version: (1, 0)
+App ID: 0
+ LN | HLN | CMD
+   0    () set Q0 0
+   1    () qalloc Q0
+   2    () init Q0
+   3    () set Q1 1
+   4    () qalloc Q1
+   5    () init Q1
+   6    () set R0 10
+   7    () array R0 @0
+   8    () set R0 1
+   9    () array R0 @1
+  10    () set R0 20
+  11    () array R0 @2
+  12    () set R0 1
+  13    () set R1 0
+  14    () store R0 @1[R1]
+  15    () set R0 0
+  16    () set R1 0
+  17    () store R0 @2[R1]
+  18    () set R0 1
+  19    () set R1 1
+  20    () store R0 @2[R1]
+  21    () set R0 1
+  22    () set R1 0
+  23    () set R2 1
+  24    () set R3 2
+  25    () set R4 0
+  26    () create_epr R0 R1 R2 R3 R4
+  27    () set R0 0
+  28    () set R1 10
+  29    () wait_all @0[R0:R1]
+  30    () cnot Q0 Q1
+  31    () meas Q1 M0
+  32    () qfree Q1
+  33    () set R0 1
+  34    () array R0 @3
+  35    () set R0 0
+  36    () store M0 @3[R0]
+  37    () ret_arr @0
+  38    () ret_arr @1
+  39    () ret_arr @2
+  40    () ret_arr @3
+
+DEBUG:NetQASM.NetSquidConnection(controller):Committing message <netqasm.backend.messages.SubroutineMessage object at 0x7cf313ba5b10>
+DEBUG:NetQASM.NetSquidConnection(target):Commiting compiled subroutine:
+Subroutine
+NetQASM version: (1, 0)
+App ID: 0
+ LN | HLN | CMD
+   0    () set Q0 0
+   1    () qalloc Q0
+   2    () init Q0
+   3    () set Q1 1
+   4    () qalloc Q1
+   5    () init Q1
+   6    () set R0 10
+   7    () array R0 @0
+   8    () set R0 1
+   9    () array R0 @1
+  10    () set R0 20
+  11    () array R0 @2
+  12    () set R0 1
+  13    () set R1 0
+  14    () store R0 @1[R1]
+  15    () set R0 0
+  16    () set R1 0
+  17    () store R0 @2[R1]
+  18    () set R0 1
+  19    () set R1 1
+  20    () store R0 @2[R1]
+  21    () set R0 0
+  22    () set R1 0
+  23    () set R2 1
+  24    () set R3 2
+  25    () set R4 0
+  26    () create_epr R0 R1 R2 R3 R4
+  27    () set R0 0
+  28    () set R1 10
+  29    () wait_all @0[R0:R1]
+  30    () cnot Q1 Q0
+  31    () h Q1
+  32    () meas Q1 M0
+  33    () qfree Q1
+  34    () set R0 1
+  35    () array R0 @3
+  36    () set R0 0
+  37    () store M0 @3[R0]
+  38    () ret_arr @0
+  39    () ret_arr @1
+  40    () ret_arr @2
+  41    () ret_arr @3
+
+DEBUG:NetQASM.NetSquidConnection(target):Committing message <netqasm.backend.messages.SubroutineMessage object at 0x7cf313ba5b40>
+DEBUG:NetQASM.SubroutineHandler(controller):No more subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):No more events so wait for next message
+INFO:NetQASM.SubroutineHandler(target):Handle message <netqasm.backend.messages.SubroutineMessage object at 0x7cf313ba6a70>
+DEBUG:NetQASM.SubroutineHandler(target):Adding to subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(target):Executing next subroutine from app ID 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register Q0 to 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Taking qubit at address 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Performing init Q0 on the qubit at address 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Doing instr init Q0 on qubit 0
+INFO:NetQASM.SubroutineHandler(controller):Handle message <netqasm.backend.messages.SubroutineMessage object at 0x7cf313ba6f20>
+DEBUG:NetQASM.SubroutineHandler(controller):Adding to subroutine tasks
+DEBUG:NetQASM.SubroutineHandler(controller):Executing next subroutine from app ID 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(controller):Set register Q0 to 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(controller):Taking qubit at address 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(controller):Performing init Q0 on the qubit at address 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(controller):Doing instr init Q0 on qubit 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register Q1 to 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Taking qubit at address 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Performing init Q1 on the qubit at address 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Doing instr init Q1 on qubit 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(controller):Set register Q1 to 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(controller):Taking qubit at address 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(controller):Performing init Q1 on the qubit at address 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(controller):Doing instr init Q1 on qubit 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R0 to 10
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Initializing an array of length 10 at address @0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R0 to 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Initializing an array of length 1 at address @1
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R0 to 20
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Initializing an array of length 20 at address @2
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R0 to 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R1 to 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Storing value 1 from register R0 to array entry @1[R1]
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R0 to 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R1 to 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Storing value 0 from register R0 to array entry @2[R1]
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R0 to 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R1 to 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Storing value 1 from register R0 to array entry @2[R1]
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R0 to 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R1 to 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R2 to 1
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R3 to 2
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Set register R4 to 0
+DEBUG:NetQASM.VanillaNetSquidExecutor(target):Creating EPR pair with remote node id 0 and EPR socket ID 0, using qubit addresses stored in array with address 1, using arguments stored in array with address 2, placing the entanglement information in array at address 0
+Exception in thread Thread-1 (backend_thread):
+Traceback (most recent call last):
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 449, in _execute_commands
+    yield from output
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/nqasm/executor/base.py", line 251, in _execute_command
+    yield from super()._execute_command(subroutine_id, command)
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 508, in _execute_command
+    output = yield from output
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 94, in new_method
+    output = yield from output
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 970, in _instr_create_epr
+    output = self._do_create_epr(
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 1005, in _do_create_epr
+    create_request = self._get_create_request(
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 1038, in _get_create_request
+    purpose_id = self._get_purpose_id(
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 1074, in _get_purpose_id
+    return self._network_stack.get_purpose_id(
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/nqasm/netstack.py", line 189, in get_purpose_id
+    return self._signaling_protocol._get_purpose_id(
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/nqasm/netstack.py", line 87, in _get_purpose_id
+    raise ValueError(
+ValueError: Not a known circuit for node with ID 0, to remote node with ID 0 and with EPR socket ID 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jorgevazquez/.conda/envs/squidasm/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/jorgevazquez/.conda/envs/squidasm/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/run/multithread/runtime_mgr.py", line 125, in backend_thread
+    ns.sim_run()
+  File "/home/jorgevazquez/.conda/envs/squidasm/lib/python3.10/site-packages/netsquid/util/simtools.py", line 278, in sim_run
+    _simengine.run()
+  File "pydynaa/core.pyx", line 1477, in pydynaa.core.SimulationEngine.run
+  File "pydynaa/core.pyx", line 173, in pydynaa.core._call_obj_expr
+  File "pydynaa/core.pyx", line 170, in pydynaa.core._call_obj_expr
+  File "netsquid/protocols/protocol.pyx", line 290, in netsquid.protocols.protocol.Protocol._expression_callback
+  File "netsquid/protocols/protocol.pyx", line 301, in netsquid.protocols.protocol.Protocol._generator_step
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/nqasm/qnodeos.py", line 147, in run
+    ev = self._get_next_task_event()
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/nqasm/qnodeos.py", line 189, in _get_next_task_event
+    return task.pop_next_event()
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/nqasm/qnodeos.py", line 63, in pop_next_event
+    self.update_next_event()
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/nqasm/qnodeos.py", line 75, in update_next_event
+    next_event = next(self._gen)
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/qnodeos.py", line 139, in _handle_subroutine
+    yield from self._execute_subroutine(subroutine=subroutine)
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/qnodeos.py", line 142, in _execute_subroutine
+    yield from self._executor.execute_subroutine(subroutine=subroutine)
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/nqasm/executor/base.py", line 243, in execute_subroutine
+    yield from super().execute_subroutine(subroutine)
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 424, in execute_subroutine
+    yield from output
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 452, in _execute_commands
+    self._handle_command_exception(exc, prog_counter, traceback_str)
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 458, in _handle_command_exception
+    raise exc.__class__(f"At line {prog_counter}: {exc}\n{traceback_str}") from exc
+ValueError: At line 26: Not a known circuit for node with ID 0, to remote node with ID 0 and with EPR socket ID 0
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 449, in _execute_commands
+    yield from output
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/nqasm/executor/base.py", line 251, in _execute_command
+    yield from super()._execute_command(subroutine_id, command)
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 508, in _execute_command
+    output = yield from output
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 94, in new_method
+    output = yield from output
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 970, in _instr_create_epr
+    output = self._do_create_epr(
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 1005, in _do_create_epr
+    create_request = self._get_create_request(
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 1038, in _get_create_request
+    purpose_id = self._get_purpose_id(
+  File "/home/jorgevazquez/Documents/netqasm/netqasm/backend/executor.py", line 1074, in _get_purpose_id
+    return self._network_stack.get_purpose_id(
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/nqasm/netstack.py", line 189, in get_purpose_id
+    return self._signaling_protocol._get_purpose_id(
+  File "/home/jorgevazquez/Documents/squidasm/squidasm/nqasm/netstack.py", line 87, in _get_purpose_id
+    raise ValueError(
+
+
+Aborted!
