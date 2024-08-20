@@ -25,7 +25,6 @@ const char * inquir_example = R"""(
   send[0](world, l1_2:_m2);
   recv(world, l1:_m3);
   X[_m3] q2;
-  c2 = measure q2;
 }
 )""";
 

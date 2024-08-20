@@ -2,5 +2,3 @@
 # APPID 0
 set Q0 0
 x Q0 
-meas Q0 M0
-qfree Q0

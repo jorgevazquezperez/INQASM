@@ -14,7 +14,7 @@ array 20 @2
 store 0 @2[0]
 store 1 @2[1]
 array 1 @3
-create_epr(1,0) 1 2 0
+create_epr(0,0) 1 2 0
 wait_all @0[0:10]
 set Q0 1
 qalloc Q0

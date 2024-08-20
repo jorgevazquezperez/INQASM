@@ -8,7 +8,7 @@ subroutine_1 = """# NETQASM 1.0
 array 10 @0
 array 1 @1
 store 0 @1[0]
-recv_epr(0,0) 1 0
+recv_epr(1,0) 1 0
 wait_all @0[0:10]
 set Q0 1
 qalloc Q0

@@ -3,9 +3,6 @@
 set Q0 0
 qalloc Q0
 init Q0
-set Q1 1
-qalloc Q1
-init Q1
 array 10 @0
 array 1 @1
 array 20 @2
@@ -14,8 +11,9 @@ store 0 @2[0]
 store 1 @2[1]
 create_epr(0, 0) 1 2 0
 wait_all @0[0:10]
-cnot Q1 Q0 
-h Q1 
+set Q1 1
+rot_y Q0 1 1
+cnot Q0 Q1 
 meas Q1 M0
 qfree Q1
 array 1 @3
