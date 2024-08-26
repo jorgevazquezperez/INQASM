@@ -102,30 +102,17 @@ void InQuIRtoNetQASMListener::applyQuantumGate(InQuIRParser::GateContext *gate, 
     }
     current_file1 += "\n";
     current_file2 += (not branched ?  "\n" : "");
-
-    if (gate_name == "X"){
-        std::cout << file_counter << std::endl;
-        std::cout << "Primer archivo después de la puerta: \n" << current_file1 << "\n";
-        std::cout << "Segundo archivo después de la puerta: \n" << current_file2 << "\n";
-    }
 }
 
 // ------------------- Listener methods -------------------
 
 void InQuIRtoNetQASMListener::enterMainprogram(InQuIRParser::MainprogramContext * ctx) {
-    std::cout << "enterMainprogram" << std::endl;
 }
 
 void InQuIRtoNetQASMListener::exitMainprogram(InQuIRParser::MainprogramContext * ctx) {
-    std::cout << "exitMainprogram" << std::endl;
 }
 
 void InQuIRtoNetQASMListener::enterProcess(InQuIRParser::ProcessContext * ctx) {
-    std::cout << ctx->participant()->getText() << std::endl;
-    // std::cout << "Array counter" << array_counter << "\n";
-    // std::cout << "Qubit counter" << qubit_counter << "\n";
-    // std::cout << "Clbit counter" << clbit_counter << "\n";
-    // std::cout << "Branches counter" << file_counter << "\n"; 
     current_file1 += "# NETQASM 1.0\n";
     current_file1 += "# APPID 0\n";
 }

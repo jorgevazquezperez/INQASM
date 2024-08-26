@@ -27,6 +27,6 @@ add_subdirectory(extern)
 add_subdirectory(cuqui)
 
 # Installation rules
-install(TARGETS Tutorial
+install(TARGETS cuqui
     RUNTIME DESTINATION "bin"    # For executables
 )
