@@ -48,9 +48,9 @@ if(XACC_BUILD_TESTS)
 endif()
 ]=]
 
-install(TARGETS ${LIBRARY_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/libs)
+install(TARGETS ${LIBRARY_NAME} DESTINATION lib)
 
-install(DIRECTORY "." 
+install(DIRECTORY "" 
         DESTINATION "include/inquir"
         COMPONENT dev 
         FILES_MATCHING PATTERN "*.h"

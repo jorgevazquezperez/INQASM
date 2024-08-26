@@ -7,8 +7,11 @@ set(CMAKE_CXX_STANDARD 17)
 message(STATUS "C++ version ${CXX_STANDARD} configured.")
 
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-  set(CMAKE_INSTALL_PREFIX "$ENV{HOME}/.prueba" CACHE PATH "default install path" FORCE)
+  set(CMAKE_INSTALL_PREFIX "/usr/local" CACHE PATH "default install path" FORCE)
 endif()
+
+set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 message(STATUS "${BoldGreen}Installing Cuqui to ${CMAKE_INSTALL_PREFIX}. Override with -DCMAKE_INSTALL_PREFIX=...${ColorReset}")
 set(CMAKE_INSTALL_LIBDIR "${CMAKE_INSTALL_PREFIX}/lib")
@@ -23,14 +26,7 @@ add_compile_flags_if_supported(-Wno-maybe-uninitialized)
 add_subdirectory(extern)
 add_subdirectory(cuqui)
 
-# Para el main
-
-add_executable(Tutorial main_antlr.cpp)
-target_link_libraries(Tutorial PUBLIC antlr4 inquir-compiler)
-
-# add the binary tree to the search path for include files
-# so that we will find TutorialConfig.h
-target_include_directories(Tutorial PUBLIC
-                          "${PROJECT_BINARY_DIR}"
-                          )
-
+# Installation rules
+install(TARGETS Tutorial
+    RUNTIME DESTINATION "bin"    # For executables
+)

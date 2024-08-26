@@ -72,7 +72,7 @@ set_target_properties(antlr4
 install(TARGETS antlr4
         DESTINATION lib)
 
-install(DIRECTORY "/" 
+install(DIRECTORY "" 
         DESTINATION "include/antlr4-runtime"
         COMPONENT dev 
         FILES_MATCHING PATTERN "*.h"
