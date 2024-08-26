@@ -1,5 +1,5 @@
 0 {
-  world = open[0,1,2,3,4,5,6,7];
+  world = open[0,1];
   q0 = init();
   q1 = init();
   _cq0 = genEnt[1](l0);
@@ -14,7 +14,7 @@
 
 }
 1 {
-  world = open[0,1,2,3,4,5,6,7];
+  world = open[0,1];
   q2 = init();
   _cq1 = genEnt[0](l0);
   CX _cq1 q2;
@@ -25,29 +25,5 @@
   recv(world, l1:_m3);
   X[_m3] q2;
   c2 = measure q2;
-
-}
-2 {
-  world = open[0,1,2,3,4,5,6,7];
-
-}
-3 {
-  world = open[0,1,2,3,4,5,6,7];
-
-}
-4 {
-  world = open[0,1,2,3,4,5,6,7];
-
-}
-5 {
-  world = open[0,1,2,3,4,5,6,7];
-
-}
-6 {
-  world = open[0,1,2,3,4,5,6,7];
-
-}
-7 {
-  world = open[0,1,2,3,4,5,6,7];
 
 }
