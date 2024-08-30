@@ -21,10 +21,10 @@ After all the dependencies have been installed, to install the INQASM compiler t
 repository:
 
 ```console
-foo@bar:~$ mkdir build
-foo@bar:~$ cd build
-foo@bar:~$ cmake ..
-foo@bar:~$ make install
+mkdir build
+cd build
+cmake ..
+make install
 ```
 
 The `make` directive can be executed without the `install` clause. As default, the INQASM command will be installed in the `usr/local` folder. To change this two methods can be employed.
@@ -32,20 +32,20 @@ The `make` directive can be executed without the `install` clause. As default, t
 1. Changing the variable `CMAKE_INSTALL_PREFIX` value while performing the `cmake` operation.
 
 ```console
-foo@bar:~$ cmake -DCMAKE_INSTALL_PREFIX=<folder_path> ..
+cmake -DCMAKE_INSTALL_PREFIX=<folder_path> ..
 ```
 
 2. Changing the variable `CMAKE_INSTALL_PREFIX` value by exporting it before executing the `cmake` operation.
 
 ```console
-foo@bar:~$ export CMAKE_INSTALL_PREFIX=<folder_path>
-foo@bar:~$ cmake ..
+export CMAKE_INSTALL_PREFIX=<folder_path>
+cmake ..
 ```
 
 After this, if the folder you chose is in the `PATH` variable, in order to employ the INQASM compiler the following line has to be executed:
 
 ```console
-foo@bar:~$ inqasm -f <file_name>
+inqasm -f <file_name>
 ```
 
 Where `<file_name>` is the name of the InQuIR file to be compiled to NetQASM.
@@ -56,9 +56,9 @@ Where `<file_name>` is the name of the InQuIR file to be compiled to NetQASM.
 To test the **InQuIR lexer** you just have to do:
 
 ```console
-foo@bar:~$ antlr4 -o test/ InQuIRLexer.g4
-foo@bar:~$ javac InQuIRLexer.java
-foo@bar:~$ grun InQuIR tokens -tokens <inquir_file>
+antlr4 -o test/ InQuIRLexer.g4
+javac InQuIRLexer.java
+grun InQuIR tokens -tokens <inquir_file>
 ```
 where `<inquir_file>` is the file containing the NetQASM subroutine. To be able to execute the previous commands, some preliminary work has to be done to configure the system. Specifically, in `./~bashrc` the following lines have to be added:
 
