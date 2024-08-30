@@ -14,7 +14,7 @@ This process is explained for Linux users. First you need to install ANTLR4. For
 - NetQASM: 0.15.1
 - SquidASM: 0.12.2
 
-## Installation and use
+## Installation and usage
 
 After all the dependencies have been installed, to install the INQASM compiler the following lines have to be executed from the root of the
 repository:
@@ -71,4 +71,6 @@ The last line, corresponding to the `grun` command, is different from the one sp
 
 ### INQASM compilation
 
-Compiling an InQuIR program to a NetQASM set of subroutines is a straight forward process.
+Compiling an InQuIR program to a NetQASM set of subroutines is a straight forward process, as has been shown in the [Intallation and usage](#installation-and-usage) section.
+
+**\#TODO** Explicar lo del ejemplo que tenemos comparando con NetQASM cuando estén las carpetas actualizadas.

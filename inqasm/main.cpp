@@ -7,12 +7,12 @@ using namespace std;
 //using namespace antlr4;
 
 const char * description = R"""(
-  InquIR compiler to NetQASM.
+  INQASM: An InquIR compiler to NetQASM.
 )""";
 
 int main(int argc, char** argv)
 {
-    cxxopts::Options options("cuqui", description);
+    cxxopts::Options options("inqasm", description);
 
     options.add_options()
         ("f,file", "File to compile", cxxopts::value<string>())

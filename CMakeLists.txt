@@ -13,7 +13,7 @@ endif()
 set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
-message(STATUS "${BoldGreen}Installing Cuqui to ${CMAKE_INSTALL_PREFIX}. Override with -DCMAKE_INSTALL_PREFIX=...${ColorReset}")
+message(STATUS "${BoldGreen}Installing INQASM to ${CMAKE_INSTALL_PREFIX}. Override with -DCMAKE_INSTALL_PREFIX=...${ColorReset}")
 set(CMAKE_INSTALL_LIBDIR "${CMAKE_INSTALL_PREFIX}/lib")
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
@@ -24,9 +24,9 @@ add_compile_flags_if_supported(-Wno-deprecated-declarations)
 add_compile_flags_if_supported(-Wno-maybe-uninitialized)
 
 add_subdirectory(extern)
-add_subdirectory(cuqui)
+add_subdirectory(inqasm)
 
 # Installation rules
-install(TARGETS cuqui
+install(TARGETS inqasm
     RUNTIME DESTINATION "bin"    # For executables
 )
