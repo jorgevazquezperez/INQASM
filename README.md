@@ -6,13 +6,14 @@ For this purpose, we have written a grammar for InQuIR programs in order to comp
 
 ## Requirements
 
-This process is explained for Linux users. First you need to install ANTLR4. For doing this, follow the [The Definite ANTLR4 Reference](https://dl.icdst.org/pdfs/files3/a91ace57a8c4c8cdd9f1663e1051bf93.pdf). Note that the version employed in this book is the 4.0, for this work we employed the most recent one, in this time being, the 4.13.1 version. Moreover, in order to execute ANTLR4 you have to install the Java SDK. In terms of quantum software, NetQASM and SquidASM have to be installed. In order to be able to install SquidASM an account on NetSQUID has to be created. Every step of the installation is depicted in their respective 
+This process is explained for Linux users. First you need to install ANTLR4. For doing this, follow the [The Definite ANTLR4 Reference](https://dl.icdst.org/pdfs/files3/a91ace57a8c4c8cdd9f1663e1051bf93.pdf). Note that the version employed in this book is the 4.0, for this work we employed the most recent one, in this time being, the 4.13.1 version. Moreover, in order to execute ANTLR4 you have to install the Java SDK. In terms of quantum software, NetQASM and SquidASM have to be installed. In order to be able to install SquidASM an account on NetSQUID has to be created. Every step of the installation is depicted in their respective repository or website, as in ANTLR.
 
 **Sum up**
 - ANTLR4: antlr-4.13.1
 - Java SDK: openjdk-19.0.2
 - NetQASM: 0.15.1
 - SquidASM: 0.12.2
+- cxxopts: 3.2.1
 
 ## Installation and usage
 
