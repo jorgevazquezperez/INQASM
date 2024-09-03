@@ -1,0 +1,11 @@
+# NETQASM 1.0
+# APPID 0
+set Q0 0
+x Q0 
+cnot Q0 Q0 
+h Q0 
+meas Q0 M0
+qfree Q0
+array 1 @0
+store M0 @0[0]
+ret_arr @0

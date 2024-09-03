@@ -1,0 +1,15 @@
+# NETQASM 1.0
+# APPID 0
+set Q0 0
+qalloc Q0
+init Q0
+set Q1 1
+qalloc Q1
+init Q1
+array 10 @0
+array 1 @1
+store 1 @1[0]
+recv_epr(0, 0) 1 0
+wait_all @0[0:10]
+ret_arr @0
+ret_arr @1

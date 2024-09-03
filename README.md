@@ -48,7 +48,7 @@ After this, if the folder you chose is in the `PATH` variable, in order to emplo
 inqasm -f <file_name>
 ```
 
-Where `<file_name>` is the name of the InQuIR file to be compiled to NetQASM.
+Where `<file_name>` is the name of the InQuIR file to be compiled to NetQASM. For example go to the `examples` folder.
 
 ## Examples
 
@@ -69,9 +69,3 @@ alias grun="java org.antlr.v4.gui.TestRig"
 ```
 
 The last line, corresponding to the `grun` command, is different from the one specified on the [The Definite ANTLR4 Reference](https://dl.icdst.org/pdfs/files3/a91ace57a8c4c8cdd9f1663e1051bf93.pdf) due to the change of location of TestRig in ANTLR4 version 4.13.1 (in the aforementioned book the version 4.0 is employed).
-
-### INQASM compilation
-
-Compiling an InQuIR program to a NetQASM set of subroutines is a straight forward process, as has been shown in the [Intallation and usage](#installation-and-usage) section.
-
-**\#TODO** Explicar lo del ejemplo que tenemos comparando con NetQASM cuando estén las carpetas actualizadas.

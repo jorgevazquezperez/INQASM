@@ -80,6 +80,8 @@ void InQuIRtoNetQASMListener::closeFile(bool finish_process) {
         array_counter = "0";
         qubit_counter = "0";
         clbit_counter = "0";
+        file_counter = "0";
+        
         if(finish_process){
             branched = false;
         }
