@@ -1,4 +1,4 @@
-# INQASM: An InQuIR compiler to NetQASM
+# InQASM: An InQuIR compiler to NetQASM
 
 In this work we are going to develop a compiler for InQuIR to NetQASM. The [InQuIR language](https://arxiv.org/abs/2302.00267) is presented to create a intermediate representation for distributed quantum computing (DQC). In this work is employed as reference, although some changes might be introduced to adjust the theoretical work to an actual implementation. Moreover, the [NetQASM language](https://iopscience.iop.org/article/10.1088/2058-9565/ac753f) is the language chosen to compile (although it should almost be said *traspile*, in the classical sense) to because it is intended to be a lower level than the InQuIR. 
 
@@ -17,7 +17,7 @@ This process is explained for Linux users. First you need to install ANTLR4. For
 
 ## Installation and usage
 
-After all the dependencies have been installed, to install the INQASM compiler the following lines have to be executed from the root of the
+After all the dependencies have been installed, to install the InQASM compiler the following lines have to be executed from the root of the
 repository:
 
 ```console
@@ -27,7 +27,7 @@ cmake ..
 make install
 ```
 
-The `make` directive can be executed without the `install` clause. As default, the INQASM command will be installed in the `usr/local` folder. To change this two methods can be employed.
+The `make` directive can be executed without the `install` clause. As default, the InQASM command will be installed in the `usr/local` folder. To change this two methods can be employed.
 
 1. Changing the variable `CMAKE_INSTALL_PREFIX` value while performing the `cmake` operation.
 
@@ -42,7 +42,7 @@ export CMAKE_INSTALL_PREFIX=<folder_path>
 cmake ..
 ```
 
-After this, if the folder you chose is in the `PATH` variable, in order to employ the INQASM compiler the following line has to be executed:
+After this, if the folder you chose is in the `PATH` variable, in order to employ the InQASM compiler the following line has to be executed:
 
 ```console
 inqasm -f <file_name>
